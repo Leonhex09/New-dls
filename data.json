@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 4 • GROUP STAGE",
-  "lastUpdated": "Nov 16, 04:02 PM",
+  "lastUpdated": "Nov 16, 04:03 PM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -24,6 +24,17 @@
     }
   ],
   "matches": [
+    {
+      "id": 1794834190741,
+      "group": "Group A",
+      "round": "Group Stage",
+      "date": "TBD",
+      "home": "GAZA FC",
+      "away": "AFRICHESTER FC",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "played"
+    },
     {
       "id": 1794834163140,
       "group": "Group A",
