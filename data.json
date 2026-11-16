@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 4 • GROUP STAGE",
-  "lastUpdated": "Nov 16, 04:43 PM",
+  "lastUpdated": "Nov 16, 04:49 PM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -28,6 +28,39 @@
     }
   ],
   "matches": [
+    {
+      "id": 1794836987097,
+      "group": "Group B",
+      "round": "Group Stage",
+      "date": "TBD",
+      "home": "RANKS FC",
+      "away": "HARTS FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794836969924,
+      "group": "Group B",
+      "round": "Group Stage",
+      "date": "TBD",
+      "home": "CHRIS JEYS FC",
+      "away": "MAN WE GO FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794836930688,
+      "group": "Group A",
+      "round": "Group Stage",
+      "date": "TBD",
+      "home": "ENERGY FC",
+      "away": "GAZA FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
     {
       "id": 1794836624928,
       "group": "Group B",
