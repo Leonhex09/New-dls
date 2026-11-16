@@ -57,9 +57,9 @@
       "date": "Matchday 1",
       "home": "AFRICHESTER FC",
       "away": "DIAMOND FOX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 5,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794838570766,
