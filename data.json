@@ -23,5 +23,17 @@
       ]
     }
   ],
-  "matches": []
+  "matches": [
+    {
+      "id": 1794834163140,
+      "group": "Group A",
+      "round": "Group Stage",
+      "date": "TBD",
+      "home": "PAT5",
+      "away": "AFRICHESTER FC",
+      "homeScore": 1,
+      "awayScore": 3,
+      "status": "played"
+    }
+  ]
 }
