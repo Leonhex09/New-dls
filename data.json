@@ -1,0 +1,23 @@
+{
+  "tournamentName": "DLS Champions League 2026",
+  "season": "SEASON 4 • GROUP STAGE",
+  "lastUpdated": "Nov 16, 03:23 PM",
+  "qualifyCount": 2,
+  "groups": [
+    {
+      "name": "Group A",
+      "teams": [
+        "AFRICHESTER",
+        "PAT5"
+      ]
+    },
+    {
+      "name": "Group B",
+      "teams": [
+        "Manchester City",
+        "AC Milan Pro"
+      ]
+    }
+  ],
+  "matches": []
+}
