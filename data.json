@@ -1,14 +1,18 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 4 • GROUP STAGE",
-  "lastUpdated": "Nov 16, 03:23 PM",
+  "lastUpdated": "Nov 16, 04:02 PM",
   "qualifyCount": 2,
   "groups": [
     {
       "name": "Group A",
       "teams": [
-        "AFRICHESTER",
-        "PAT5"
+        "PAT5",
+        "GAZA FC",
+        "AFRICHESTER FC",
+        "DIAMOND FOX FC",
+        "ENERGY FC",
+        "STARBOY FC"
       ]
     },
     {
