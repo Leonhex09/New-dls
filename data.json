@@ -47,8 +47,8 @@
       "home": "GAZA FC",
       "away": "ENERGY FC",
       "homeScore": 30,
-      "awayScore": null,
-      "status": "upcoming"
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794838570763,
