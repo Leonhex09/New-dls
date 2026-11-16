@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 4 • GROUP STAGE",
-  "lastUpdated": "Nov 16, 04:40 PM",
+  "lastUpdated": "Nov 16, 04:43 PM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -28,6 +28,17 @@
     }
   ],
   "matches": [
+    {
+      "id": 1794836624928,
+      "group": "Group B",
+      "round": "Group Stage",
+      "date": "TBD",
+      "home": "MAN WE GO FC",
+      "away": "HARTS FC",
+      "homeScore": 3,
+      "awayScore": 0,
+      "status": "played"
+    },
     {
       "id": 1794836442988,
       "group": "Group B",
