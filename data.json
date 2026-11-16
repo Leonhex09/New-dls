@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 4 • GROUP STAGE",
-  "lastUpdated": "Nov 16, 04:27 PM",
+  "lastUpdated": "Nov 16, 04:29 PM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -42,7 +42,7 @@
       "date": "TBD",
       "home": "DIAMOND FOX FC",
       "away": "STARBOY FC",
-      "homeScore": 2,
+      "homeScore": 4,
       "awayScore": 0,
       "status": "played"
     },
