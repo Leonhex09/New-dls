@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 4 • GROUP STAGE",
-  "lastUpdated": "Nov 16, 04:03 PM",
+  "lastUpdated": "Nov 16, 04:05 PM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -24,6 +24,17 @@
     }
   ],
   "matches": [
+    {
+      "id": 1794834331241,
+      "group": "Group A",
+      "round": "Group Stage",
+      "date": "TBD",
+      "home": "ENERGY FC",
+      "away": "DIAMOND FOX FC",
+      "homeScore": 0,
+      "awayScore": 3,
+      "status": "played"
+    },
     {
       "id": 1794834190741,
       "group": "Group A",
