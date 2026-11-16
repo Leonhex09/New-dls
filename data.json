@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 16, 05:16 PM",
+  "lastUpdated": "Nov 16, 05:58 PM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -35,9 +35,9 @@
       "date": "Matchday 1",
       "home": "PAT5",
       "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794838570762,
