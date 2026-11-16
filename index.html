@@ -332,7 +332,7 @@
         <div id="fixtures" class="section">
             <div class="filter-bar">
                 <select id="fixture-group-filter" class="filter-select" onchange="renderMatches()">
-                    <option value="ALL">All Groups</option>
+                    <option value="ALL">All Groups</motion>
                 </select>
             </div>
             <div id="fixtures-container"></div>
@@ -354,50 +354,30 @@
     </footer>
 
     <script>
-        // Fallback sample data (used automatically if data.json hasn't been created yet)
-        const FALLBACK_DATA = {
-            tournamentName: "DLS Champions League 2026",
-            season: "SEASON 4 • GROUP STAGE",
-            lastUpdated: "Sample Preview Mode",
-            qualifyCount: 2,
-            groups: [
-                {
-                    name: "Group A",
-                    teams: ["Real Madrid FC", "Arsenal United", "Barcelona Legends", "Napoli Stars"]
-                },
-                {
-                    name: "Group B",
-                    teams: ["Manchester City", "AC Milan Pro", "Liverpool Reds", "Bayern Titans"]
-                }
-            ],
-            matches: [
-                { id: 1, group: "Group A", round: "Matchday 1", date: "Nov 16, 20:00", home: "Real Madrid FC", away: "Arsenal United", homeScore: 3, awayScore: 1, status: "played" },
-                { id: 2, group: "Group A", round: "Matchday 1", date: "Nov 16, 20:30", home: "Barcelona Legends", away: "Napoli Stars", homeScore: 2, awayScore: 2, status: "played" },
-                { id: 3, group: "Group B", round: "Matchday 1", date: "Nov 16, 21:00", home: "Manchester City", away: "AC Milan Pro", homeScore: 4, awayScore: 0, status: "played" },
-                { id: 4, group: "Group A", round: "Matchday 2", date: "Nov 17, 19:00", home: "Real Madrid FC", away: "Barcelona Legends", homeScore: null, awayScore: null, status: "upcoming" },
-                { id: 5, group: "Group B", round: "Matchday 2", date: "Nov 17, 19:30", home: "Liverpool Reds", away: "Bayern Titans", homeScore: null, awayScore: null, status: "upcoming" }
-            ]
-        };
-
         let tournamentData = null;
 
-        // Fetch data.json with cache-busting timestamp so updates appear immediately
         async function loadData() {
             try {
-                const response = await fetch(`data.json?t=${new Date().getTime()}`);
-                if (!response.ok) throw new Error("data.json not found");
+                const response = await fetch(`data.json?t=${Date.now()}`, { cache: "no-store" });
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 tournamentData = await response.json();
+                initApp();
             } catch (err) {
-                console.warn("Using fallback preview data until data.json is pushed:", err);
-                tournamentData = FALLBACK_DATA;
+                console.error("Failed to load data.json:", err);
+                document.getElementById("last-updated").textContent = "Error loading data.json from repository.";
+                document.getElementById("standings-container").innerHTML = `
+                    <div class="status-bar">
+                        Could not load <strong>data.json</strong>.<br>
+                        Please ensure <code>data.json</code> is committed in your repository alongside <code>index.html</code>.
+                    </div>
+                `;
             }
-            initApp();
         }
 
         function initApp() {
             document.getElementById("tournament-title").textContent = tournamentData.tournamentName || "DLS Tournament";
             document.getElementById("season-badge").textContent = tournamentData.season || "DLS LEAGUE";
-            document.getElementById("last-updated").textContent = `Last Updated: ${tournamentData.lastUpdated || "Recently"}`;
+            document.getElementById("last-updated").textContent = `Last Updated: ${tournamentData.lastUpdated || "Just now"}`;
 
             populateGroupFilters();
             renderStandings();
@@ -405,7 +385,7 @@
         }
 
         function populateGroupFilters() {
-            const groupNames = tournamentData.groups.map(g => g.name);
+            const groupNames = (tournamentData.groups || []).map(g => g.name);
             const filters = ["fixture-group-filter", "result-group-filter"];
 
             filters.forEach(id => {
@@ -420,14 +400,13 @@
             });
         }
 
-        // Automatically calculate W, D, L, GF, GA, GD, PTS from played matches
         function calculateGroupTable(group) {
             const stats = {};
-            group.teams.forEach(team => {
+            (group.teams || []).forEach(team => {
                 stats[team] = { team, mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
             });
 
-            tournamentData.matches
+            (tournamentData.matches || [])
                 .filter(m => m.group === group.name && m.status === "played" && m.homeScore !== null && m.awayScore !== null)
                 .forEach(m => {
                     const hScore = Number(m.homeScore);
@@ -472,6 +451,11 @@
             const container = document.getElementById("standings-container");
             container.innerHTML = "";
             const qualifyCount = tournamentData.qualifyCount ?? 2;
+
+            if (!tournamentData.groups || !tournamentData.groups.length) {
+                container.innerHTML = `<div class="status-bar">No groups added yet.</div>`;
+                return;
+            }
 
             tournamentData.groups.forEach(group => {
                 const tableData = calculateGroupTable(group);
@@ -528,11 +512,12 @@
         function renderMatches() {
             const fixtureFilter = document.getElementById("fixture-group-filter").value;
             const resultFilter = document.getElementById("result-group-filter").value;
+            const matches = tournamentData.matches || [];
 
-            const upcoming = tournamentData.matches.filter(m =>
+            const upcoming = matches.filter(m =>
                 m.status !== "played" && (fixtureFilter === "ALL" || m.group === fixtureFilter)
             );
-            const played = tournamentData.matches.filter(m =>
+            const played = matches.filter(m =>
                 m.status === "played" && (resultFilter === "ALL" || m.group === resultFilter)
             );
 
@@ -573,4 +558,15 @@
 
         function escapeHtml(str) {
             return String(str ?? "")
-                .replace(/&/g, "&amp;"
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, '&#39;');
+        }
+
+        // Start the application
+        loadData();
+    </script>
+</body>
+</html>
