@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 4 • GROUP STAGE",
-  "lastUpdated": "Nov 16, 04:29 PM",
+  "lastUpdated": "Nov 16, 04:32 PM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -18,8 +18,12 @@
     {
       "name": "Group B",
       "teams": [
-        "Manchester City",
-        "AC Milan Pro"
+        "AbRAMZ FC",
+        "FINIX FC",
+        "CHRIS JEYS FC",
+        "MAN WE GO FC",
+        "RANKS FC",
+        "HARTS FC"
       ]
     }
   ],
