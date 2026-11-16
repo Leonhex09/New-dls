@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 16, 05:58 PM",
+  "lastUpdated": "Nov 16, 05:59 PM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -46,7 +46,7 @@
       "date": "Matchday 1",
       "home": "GAZA FC",
       "away": "ENERGY FC",
-      "homeScore": null,
+      "homeScore": 30,
       "awayScore": null,
       "status": "upcoming"
     },
