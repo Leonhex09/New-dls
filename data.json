@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 07:06 AM",
+  "lastUpdated": "Nov 17, 07:08 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -387,6 +387,42 @@
       "homeScore": 2,
       "awayScore": 0,
       "status": "played"
+    },
+    {
+      "id": 1794888477170,
+      "group": "Knockout",
+      "round": "Semi-Final 1",
+      "date": "Semi-Final",
+      "venue": "Stadium A",
+      "home": "AFRICHESTER FC",
+      "away": "AbRAMZ FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794888477171,
+      "group": "Knockout",
+      "round": "Semi-Final 2",
+      "date": "Semi-Final",
+      "venue": "Stadium B",
+      "home": "DIAMOND FOX FC",
+      "away": "CHRIS JEYS FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794888477172,
+      "group": "Knockout",
+      "round": "Final",
+      "date": "Championship",
+      "venue": "Grand Stadium",
+      "home": "Winner SF 1",
+      "away": "Winner SF 2",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
     }
   ],
   "managers": {
