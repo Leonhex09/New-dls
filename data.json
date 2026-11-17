@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 08:08 AM",
+  "lastUpdated": "Nov 17, 09:13 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -387,6 +387,42 @@
       "homeScore": 2,
       "awayScore": 0,
       "status": "played"
+    },
+    {
+      "id": 1794895860110,
+      "group": "Knockout",
+      "round": "Semi-Final 1",
+      "date": "Semi-Final",
+      "venue": "Stadium A",
+      "home": "AFRICHESTER FC",
+      "away": "AbRAMZ FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794895860111,
+      "group": "Knockout",
+      "round": "Semi-Final 2",
+      "date": "Semi-Final",
+      "venue": "Stadium B",
+      "home": "DIAMOND FOX FC",
+      "away": "CHRIS JEYS FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794895860112,
+      "group": "Knockout",
+      "round": "Final",
+      "date": "Championship",
+      "venue": "Grand Stadium",
+      "home": "Winner SF 1",
+      "away": "Winner SF 2",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
     }
   ],
   "managers": {
@@ -403,5 +439,5 @@
     "GAZA FC": "Chris",
     "PAT5": "Fahad"
   },
-  "commentary": "Hi there"
+  "commentary": "Managers, players, and legends of the pitch—welcome to the arena.\nWe didn't come this far just to play games. We came here to write history.\nEvery single match you’ve fought, every hard-earned victory, every last-minute goal, and every tactical battle has led to this exact moment. To the coaches pacing the sidelines: your strategy and composure are being tested. To the players stepping onto the turf: this is your stage to shine under the floodlights.\nRemember why we started this journey. It’s not just about the stats, the tables, or the scorelines—it’s about glory, rivalry, and the relentless drive to lift that trophy.\nKeep your focus sharp, play with honor, leave everything out on the pitch, and let the best team win.\nThe stadium is packed. The whistle is about to blow. Let the games begin"
 }
