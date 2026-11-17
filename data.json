@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 06:59 AM",
+  "lastUpdated": "Nov 17, 07:02 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -216,9 +216,9 @@
       "venue": "Stadium",
       "home": "PAT5",
       "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794887233170,
@@ -228,9 +228,9 @@
       "venue": "Stadium",
       "home": "GAZA FC",
       "away": "ENERGY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794887233171,
@@ -240,9 +240,9 @@
       "venue": "Stadium",
       "home": "AFRICHESTER FC",
       "away": "DIAMOND FOX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887233172,
@@ -252,9 +252,9 @@
       "venue": "Stadium",
       "home": "PAT5",
       "away": "ENERGY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887233173,
@@ -264,9 +264,9 @@
       "venue": "Stadium",
       "home": "STARBOY FC",
       "away": "DIAMOND FOX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 3,
+      "status": "played"
     },
     {
       "id": 1794887233174,
@@ -276,9 +276,9 @@
       "venue": "Stadium",
       "home": "GAZA FC",
       "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 4,
+      "status": "played"
     },
     {
       "id": 1794887233175,
@@ -288,9 +288,9 @@
       "venue": "Stadium",
       "home": "PAT5",
       "away": "DIAMOND FOX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887233176,
@@ -300,9 +300,9 @@
       "venue": "Stadium",
       "home": "ENERGY FC",
       "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 5,
+      "status": "played"
     },
     {
       "id": 1794887233177,
@@ -312,9 +312,9 @@
       "venue": "Stadium",
       "home": "STARBOY FC",
       "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794887233178,
@@ -324,9 +324,9 @@
       "venue": "Stadium",
       "home": "PAT5",
       "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 3,
+      "status": "played"
     },
     {
       "id": 1794887233179,
@@ -336,9 +336,9 @@
       "venue": "Stadium",
       "home": "DIAMOND FOX FC",
       "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794887233180,
@@ -348,9 +348,9 @@
       "venue": "Stadium",
       "home": "ENERGY FC",
       "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794887233181,
@@ -360,9 +360,9 @@
       "venue": "Stadium",
       "home": "PAT5",
       "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 3,
+      "status": "played"
     },
     {
       "id": 1794887233182,
@@ -372,9 +372,9 @@
       "venue": "Stadium",
       "home": "AFRICHESTER FC",
       "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 8,
+      "awayScore": 4,
+      "status": "played"
     },
     {
       "id": 1794887233183,
@@ -384,9 +384,9 @@
       "venue": "Stadium",
       "home": "DIAMOND FOX FC",
       "away": "ENERGY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "played"
     }
   ],
   "managers": {
