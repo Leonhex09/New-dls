@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 05:28 AM",
+  "lastUpdated": "Nov 17, 05:29 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -299,9 +299,9 @@
       "date": "Matchday 4",
       "home": "PAT5",
       "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 3,
+      "status": "played"
     },
     {
       "id": 1794878704934,
@@ -310,9 +310,9 @@
       "date": "Matchday 4",
       "home": "DIAMOND FOX FC",
       "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794878704935,
@@ -321,9 +321,9 @@
       "date": "Matchday 4",
       "home": "ENERGY FC",
       "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794878704936,
