@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 05:47 AM",
+  "lastUpdated": "Nov 17, 06:08 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -377,7 +377,7 @@
       "home": "DIAMOND FOX FC",
       "away": "RANKS FC",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 2,
       "status": "played"
     },
     {
