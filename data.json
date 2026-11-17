@@ -68,9 +68,9 @@
       "date": "Matchday 2",
       "home": "AbRAMZ FC",
       "away": "RANKS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794838585083,
@@ -79,9 +79,9 @@
       "date": "Matchday 2",
       "home": "HARTS FC",
       "away": "MAN WE GO FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 5,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794838585084,
@@ -90,9 +90,9 @@
       "date": "Matchday 2",
       "home": "FINIX FC",
       "away": "CHRIS JEYS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794838585085,
