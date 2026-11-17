@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 07:02 AM",
+  "lastUpdated": "Nov 17, 07:06 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -36,9 +36,9 @@
       "venue": "Stadium",
       "home": "AbRAMZ FC",
       "away": "HARTS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794887227626,
@@ -48,9 +48,9 @@
       "venue": "Stadium",
       "home": "FINIX FC",
       "away": "RANKS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794887227627,
@@ -60,9 +60,9 @@
       "venue": "Stadium",
       "home": "CHRIS JEYS FC",
       "away": "MAN WE GO FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794887227629,
@@ -72,9 +72,9 @@
       "venue": "Stadium",
       "home": "AbRAMZ FC",
       "away": "RANKS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794887227630,
@@ -84,9 +84,9 @@
       "venue": "Stadium",
       "home": "HARTS FC",
       "away": "MAN WE GO FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 3,
+      "status": "played"
     },
     {
       "id": 1794887227631,
@@ -96,9 +96,9 @@
       "venue": "Stadium",
       "home": "FINIX FC",
       "away": "CHRIS JEYS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887227632,
@@ -108,9 +108,9 @@
       "venue": "Stadium",
       "home": "AbRAMZ FC",
       "away": "MAN WE GO FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794887227633,
@@ -120,9 +120,9 @@
       "venue": "Stadium",
       "home": "RANKS FC",
       "away": "CHRIS JEYS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794887227634,
@@ -132,9 +132,9 @@
       "venue": "Stadium",
       "home": "HARTS FC",
       "away": "FINIX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887227635,
@@ -144,9 +144,9 @@
       "venue": "Stadium",
       "home": "AbRAMZ FC",
       "away": "CHRIS JEYS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887227636,
@@ -156,9 +156,9 @@
       "venue": "Stadium",
       "home": "MAN WE GO FC",
       "away": "FINIX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887227637,
@@ -168,9 +168,9 @@
       "venue": "Stadium",
       "home": "RANKS FC",
       "away": "HARTS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887227638,
@@ -180,9 +180,9 @@
       "venue": "Stadium",
       "home": "AbRAMZ FC",
       "away": "FINIX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794887227639,
@@ -192,9 +192,9 @@
       "venue": "Stadium",
       "home": "CHRIS JEYS FC",
       "away": "HARTS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887227640,
@@ -204,9 +204,9 @@
       "venue": "Stadium",
       "home": "MAN WE GO FC",
       "away": "RANKS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794887233169,
