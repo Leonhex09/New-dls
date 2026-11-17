@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 06:39 AM",
+  "lastUpdated": "Nov 17, 06:43 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -224,7 +224,8 @@
       "away": "RANKS FC",
       "homeScore": null,
       "awayScore": null,
-      "status": "upcoming"
+      "status": "upcoming",
+      "venue": "Afrihad"
     },
     {
       "id": 1794886662601,
@@ -411,6 +412,7 @@
     "AbRAMZ FC": "Amos",
     "STARBOY FC": "Brave",
     "DIAMOND FOX FC": "Mukasa",
-    "AFRICHESTER FC": "Star"
+    "AFRICHESTER FC": "Star",
+    "RANKS FC": "Kachele "
   }
 }
