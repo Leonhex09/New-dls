@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 05:30 AM",
+  "lastUpdated": "Nov 17, 05:31 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -134,9 +134,9 @@
       "date": "Matchday 4",
       "home": "AbRAMZ FC",
       "away": "CHRIS JEYS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794838585089,
@@ -145,9 +145,9 @@
       "date": "Matchday 4",
       "home": "MAN WE GO FC",
       "away": "FINIX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794838585090,
@@ -156,9 +156,9 @@
       "date": "Matchday 4",
       "home": "RANKS FC",
       "away": "HARTS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794838585091,
