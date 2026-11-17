@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 16, 06:02 PM",
+  "lastUpdated": "Nov 17, 04:25 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -28,171 +28,6 @@
     }
   ],
   "matches": [
-    {
-      "id": 1794838570761,
-      "group": "Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "home": "PAT5",
-      "away": "STARBOY FC",
-      "homeScore": 2,
-      "awayScore": 1,
-      "status": "played"
-    },
-    {
-      "id": 1794838570762,
-      "group": "Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "home": "GAZA FC",
-      "away": "ENERGY FC",
-      "homeScore": 0,
-      "awayScore": 0,
-      "status": "played"
-    },
-    {
-      "id": 1794838570763,
-      "group": "Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "home": "AFRICHESTER FC",
-      "away": "DIAMOND FOX FC",
-      "homeScore": 5,
-      "awayScore": 2,
-      "status": "played"
-    },
-    {
-      "id": 1794838570766,
-      "group": "Group A",
-      "round": "Matchday 2",
-      "date": "Matchday 2",
-      "home": "PAT5",
-      "away": "ENERGY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570767,
-      "group": "Group A",
-      "round": "Matchday 2",
-      "date": "Matchday 2",
-      "home": "STARBOY FC",
-      "away": "DIAMOND FOX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570768,
-      "group": "Group A",
-      "round": "Matchday 2",
-      "date": "Matchday 2",
-      "home": "GAZA FC",
-      "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570769,
-      "group": "Group A",
-      "round": "Matchday 3",
-      "date": "Matchday 3",
-      "home": "PAT5",
-      "away": "DIAMOND FOX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570770,
-      "group": "Group A",
-      "round": "Matchday 3",
-      "date": "Matchday 3",
-      "home": "ENERGY FC",
-      "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570771,
-      "group": "Group A",
-      "round": "Matchday 3",
-      "date": "Matchday 3",
-      "home": "STARBOY FC",
-      "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570772,
-      "group": "Group A",
-      "round": "Matchday 4",
-      "date": "Matchday 4",
-      "home": "PAT5",
-      "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570773,
-      "group": "Group A",
-      "round": "Matchday 4",
-      "date": "Matchday 4",
-      "home": "DIAMOND FOX FC",
-      "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570774,
-      "group": "Group A",
-      "round": "Matchday 4",
-      "date": "Matchday 4",
-      "home": "ENERGY FC",
-      "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570775,
-      "group": "Group A",
-      "round": "Matchday 5",
-      "date": "Matchday 5",
-      "home": "PAT5",
-      "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570776,
-      "group": "Group A",
-      "round": "Matchday 5",
-      "date": "Matchday 5",
-      "home": "AFRICHESTER FC",
-      "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794838570777,
-      "group": "Group A",
-      "round": "Matchday 5",
-      "date": "Matchday 5",
-      "home": "DIAMOND FOX FC",
-      "away": "ENERGY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
     {
       "id": 1794838585073,
       "group": "Group B",
@@ -354,6 +189,171 @@
       "date": "Matchday 5",
       "home": "MAN WE GO FC",
       "away": "RANKS FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704918,
+      "group": "Group A",
+      "round": "Matchday 1",
+      "date": "Matchday 1",
+      "home": "PAT5",
+      "away": "STARBOY FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704919,
+      "group": "Group A",
+      "round": "Matchday 1",
+      "date": "Matchday 1",
+      "home": "GAZA FC",
+      "away": "ENERGY FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704920,
+      "group": "Group A",
+      "round": "Matchday 1",
+      "date": "Matchday 1",
+      "home": "AFRICHESTER FC",
+      "away": "DIAMOND FOX FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704927,
+      "group": "Group A",
+      "round": "Matchday 2",
+      "date": "Matchday 2",
+      "home": "PAT5",
+      "away": "ENERGY FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704928,
+      "group": "Group A",
+      "round": "Matchday 2",
+      "date": "Matchday 2",
+      "home": "STARBOY FC",
+      "away": "DIAMOND FOX FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704929,
+      "group": "Group A",
+      "round": "Matchday 2",
+      "date": "Matchday 2",
+      "home": "GAZA FC",
+      "away": "AFRICHESTER FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704930,
+      "group": "Group A",
+      "round": "Matchday 3",
+      "date": "Matchday 3",
+      "home": "PAT5",
+      "away": "DIAMOND FOX FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704931,
+      "group": "Group A",
+      "round": "Matchday 3",
+      "date": "Matchday 3",
+      "home": "ENERGY FC",
+      "away": "AFRICHESTER FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704932,
+      "group": "Group A",
+      "round": "Matchday 3",
+      "date": "Matchday 3",
+      "home": "STARBOY FC",
+      "away": "GAZA FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704933,
+      "group": "Group A",
+      "round": "Matchday 4",
+      "date": "Matchday 4",
+      "home": "PAT5",
+      "away": "AFRICHESTER FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704934,
+      "group": "Group A",
+      "round": "Matchday 4",
+      "date": "Matchday 4",
+      "home": "DIAMOND FOX FC",
+      "away": "GAZA FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704935,
+      "group": "Group A",
+      "round": "Matchday 4",
+      "date": "Matchday 4",
+      "home": "ENERGY FC",
+      "away": "STARBOY FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704936,
+      "group": "Group A",
+      "round": "Matchday 5",
+      "date": "Matchday 5",
+      "home": "PAT5",
+      "away": "GAZA FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704937,
+      "group": "Group A",
+      "round": "Matchday 5",
+      "date": "Matchday 5",
+      "home": "AFRICHESTER FC",
+      "away": "STARBOY FC",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming"
+    },
+    {
+      "id": 1794878704938,
+      "group": "Group A",
+      "round": "Matchday 5",
+      "date": "Matchday 5",
+      "home": "DIAMOND FOX FC",
+      "away": "ENERGY FC",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming"
