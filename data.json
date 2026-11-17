@@ -332,9 +332,9 @@
       "date": "Matchday 5",
       "home": "PAT5",
       "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 2,
+      "status": "played"
     },
     {
       "id": 1794878704937,
@@ -343,9 +343,9 @@
       "date": "Matchday 5",
       "home": "AFRICHESTER FC",
       "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 6,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794878704938,
@@ -354,9 +354,9 @@
       "date": "Matchday 5",
       "home": "DIAMOND FOX FC",
       "away": "ENERGY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "played"
     }
   ]
 }
