@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 06:55 AM",
+  "lastUpdated": "Nov 17, 06:59 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -28,40 +28,6 @@
     }
   ],
   "matches": [
-    {
-      "id": 1794883380038,
-      "group": "Knockout",
-      "round": "Semi-Final 1",
-      "date": "Semi-Final",
-      "home": "AFRICHESTER FC",
-      "away": "HARTS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794883380039,
-      "group": "Knockout",
-      "round": "Semi-Final 2",
-      "date": "Semi-Final",
-      "home": "DIAMOND FOX FC",
-      "away": "RANKS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
-    },
-    {
-      "id": 1794883380040,
-      "group": "Knockout",
-      "round": "Final",
-      "date": "Championship",
-      "home": "AFRICHESTER FC",
-      "away": "RANKS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "venue": "Afrihad"
-    },
     {
       "id": 1794887227625,
       "group": "Group B",
