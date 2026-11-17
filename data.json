@@ -167,9 +167,9 @@
       "date": "Matchday 5",
       "home": "AbRAMZ FC",
       "away": "FINIX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 3,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794838585093,
@@ -178,9 +178,9 @@
       "date": "Matchday 5",
       "home": "CHRIS JEYS FC",
       "away": "HARTS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "played"
     },
     {
       "id": 1794838585094,
@@ -189,9 +189,9 @@
       "date": "Matchday 5",
       "home": "MAN WE GO FC",
       "away": "RANKS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794878704918,
