@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 07:14 AM",
+  "lastUpdated": "Nov 17, 07:45 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -438,5 +438,6 @@
     "ENERGY FC": "Abdu",
     "GAZA FC": "Chris",
     "PAT5": "Fahad"
-  }
+  },
+  "commentary": "Hi there"
 }
