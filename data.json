@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 18, 10:04 AM",
+  "lastUpdated": "Nov 18, 10:53 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -247,8 +247,8 @@
       "status": "played",
       "stats": {
         "possession": [
-          54,
-          46
+          51,
+          49
         ],
         "shots": [
           4,
@@ -258,9 +258,41 @@
           2,
           1
         ],
+        "tackles": [
+          6,
+          4
+        ],
+        "passes": [
+          39,
+          27
+        ],
         "corners": [
-          3,
-          2
+          1,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bookings": [
+          0,
+          0
+        ],
+        "offsides": [
+          0,
+          0
+        ],
+        "passCompletion": [
+          88,
+          79
+        ],
+        "shotAccuracy": [
+          75,
+          33
+        ],
+        "tackleSuccess": [
+          100,
+          50
         ]
       }
     },
