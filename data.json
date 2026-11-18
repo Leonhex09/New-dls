@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 17, 09:34 AM",
+  "lastUpdated": "Nov 18, 09:19 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -392,8 +392,16 @@
   "managers": {
     "AbRAMZ FC": "Amos",
     "STARBOY FC": "Brave",
-    "DIAMOND FOX FC": "Mukasa",
-    "AFRICHESTER FC": "Star",
+    "DIAMOND FOX FC": {
+      "name": "Mukasa",
+      "trackerId": "",
+      "clubTag": "DFO"
+    },
+    "AFRICHESTER FC": {
+      "name": "Star",
+      "trackerId": "1sw178v2",
+      "clubTag": "AFC"
+    },
     "RANKS FC": "Lumonde",
     "FINIX FC": "Professor ",
     "CHRIS JEYS FC": "Umar",
