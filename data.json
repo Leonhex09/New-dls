@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 18, 09:19 AM",
+  "lastUpdated": "Nov 18, 09:24 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -240,9 +240,9 @@
       "venue": "Stadium",
       "home": "AFRICHESTER FC",
       "away": "DIAMOND FOX FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "played"
     },
     {
       "id": 1794896768032,
