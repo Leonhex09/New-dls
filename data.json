@@ -228,9 +228,27 @@
       "venue": "Stadium",
       "home": "GAZA FC",
       "away": "ENERGY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming"
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "played",
+      "stats": {
+        "possession": [
+          54,
+          46
+        ],
+        "shots": [
+          6,
+          4
+        ],
+        "onTarget": [
+          4,
+          2
+        ],
+        "corners": [
+          3,
+          2
+        ]
+      }
     },
     {
       "id": 1794896768031,
