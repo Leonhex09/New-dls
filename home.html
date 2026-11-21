@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DLS Tournament Hub • Home</title>
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --bg-card: #131a2a;
+            --bg-card-hover: #1a2338;
+            --accent: #00e676;
+            --accent-glow: rgba(0, 230, 118, 0.28);
+            --blue: #3b82f6;
+            --blue-glow: rgba(59, 130, 246, 0.25);
+            --amber: #f59e0b;
+            --amber-glow: rgba(245, 158, 11, 0.25);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #232d42;
+            --danger: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image:
+                radial-gradient(circle at 50% -10%, rgba(0, 230, 118, 0.14), transparent 55%),
+                radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.10), transparent 45%);
+            color: var(--text-main);
+            line-height: 1.45;
+            min-height: 100vh;
+            padding-bottom: 84px;
+        }
+
+        /* --- HERO HEADER --- */
+        .hero {
+            background: linear-gradient(180deg, rgba(16, 23, 38, 0.95) 0%, rgba(9, 13, 22, 0.7) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 28px 16px 24px 16px;
+            text-align: center;
+        }
+
+        .hero-inner {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        .season-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--accent-glow);
+            color: var(--accent);
+            border: 1px solid rgba(0, 230, 118, 0.55);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.8px;
+            padding: 5px 12px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 1.75rem;
+            font-weight: 900;
+            letter-spacing: -0.3px;
+            color: var(--text-main);
+        }
+
+        .hero-sub {
+            color: var(--text-muted);
+            font-size: 0.86rem;
+            max-width: 560px;
+            margin: 8px auto 0 auto;
+        }
+
+        .live-meta-bar {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: #0d1320;
+            border: 1px solid var(--border);
+            font-size: 0.74rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 8px var(--accent);
+        }
+
+        /* --- MAIN CONTAINER --- */
+        .container {
+            max-width: 880px;
+            margin: 22px auto 0 auto;
+            padding: 0 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* --- PRIMARY ACTION PORTAL CARDS --- */
+        .section-label {
+            font-size: 0.76rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .portal-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        @media (max-width: 720px) {
+            .portal-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .portal-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 14px;
+            text-decoration: none;
+            background: linear-gradient(145deg, #131a2a 0%, #0d1320 100%);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px 16px;
+            color: var(--text-main);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .portal-card.standings-card {
+            border-color: rgba(0, 230, 118, 0.45);
+        }
+        .portal-card.standings-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 10px 26px var(--accent-glow);
+        }
+
+        .portal-card.register-card {
+            border-color: rgba(59, 130, 246, 0.45);
+        }
+        .portal-card.register-card:hover {
+            border-color: var(--blue);
+            box-shadow: 0 10px 26px var(--blue-glow);
+        }
+
+        .portal-card.results-card {
+            border-color: rgba(245, 158, 11, 0.45);
+        }
+        .portal-card.results-card:hover {
+            border-color: var(--amber);
+            box-shadow: 0 10px 26px var(--amber-glow);
+        }
+
+        .portal-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .portal-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .standings-card .portal-icon {
+            background: var(--accent-glow);
+            border: 1px solid rgba(0, 230, 118, 0.4);
+        }
+        .register-card .portal-icon {
+            background: var(--blue-glow);
+            border: 1px solid rgba(59, 130, 246, 0.4);
+        }
+        .results-card .portal-icon {
+            background: var(--amber-glow);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+        }
+
+        .portal-tag {
+            font-size: 0.64rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background: #090d16;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+
+        .portal-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .portal-desc {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .portal-cta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.78rem;
+            font-weight: 800;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .standings-card .portal-cta { color: var(--accent); }
+        .register-card .portal-cta { color: #60a5fa; }
+        .results-card .portal-cta { color: #fbbf24; }
+
+        /* --- LIVE KPI STRIP --- */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        @media (max-width: 640px) {
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .kpi-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 12px;
+            text-align: center;
+        }
+
+        .kpi-value {
+            font-size: 1.35rem;
+            font-weight: 900;
+            color: var(--accent);
+        }
+
+        .kpi-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* --- BROADCAST COMMENTARY BOX --- */
+        @keyframes borderGlowPulse {
+            0% { border-image: linear-gradient(to bottom, #00e676 0%, rgba(0, 230, 118, 0.3) 70%, transparent 100%) 1; }
+            33% { border-image: linear-gradient(to bottom, #3b82f6 0%, rgba(59, 130, 246, 0.3) 70%, transparent 100%) 1; }
+            66% { border-image: linear-gradient(to bottom, #f59e0b 0%, rgba(245, 158, 11, 0.3) 70%, transparent 100%) 1; }
+            100% { border-image: linear-gradient(to bottom, #00e676 0%, rgba(0, 230, 118, 0.3) 70%, transparent 100%) 1; }
+        }
+
+        @keyframes textPulsate {
+            0% { opacity: 0.88; }
+            50% { opacity: 1; text-shadow: 0 0 8px rgba(0, 230, 118, 0.35); }
+            100% { opacity: 0.88; }
+        }
+
+        .commentary-box {
+            background: var(--bg-card);
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            animation: borderGlowPulse 6s infinite ease-in-out;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .commentary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--danger);
+            box-shadow: 0 0 8px var(--danger);
+            animation: pulseDot 1.5s infinite;
+        }
+
+        @keyframes pulseDot {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 12px var(--danger); }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+
+        .commentary-body {
+            font-size: 0.88rem;
+            color: var(--text-main);
+            white-space: pre-wrap;
+            animation: textPulsate 3s infinite ease-in-out;
+        }
+
+        /* --- QUICK GUIDE STRIP --- */
+        .guide-card {
+            background: linear-gradient(135deg, #131a2a 0%, #0d1320 100%);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .guide-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 720px) {
+            .guide-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .guide-step {
+            background: #090d16;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .guide-step-num {
+            font-size: 0.68rem;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .guide-step strong {
+            display: block;
+            font-size: 0.84rem;
+            margin-bottom: 3px;
+        }
+
+        .guide-step span {
+            font-size: 0.74rem;
+            color: var(--text-muted);
+        }
+
+        /* --- ADMIN CHAT WIDGET --- */
+        .user-whatsapp-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+
+        .user-whatsapp-toggle-btn {
+            background: #25d366;
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 30px;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 800;
+            font-size: 0.82rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            position: relative;
+        }
+
+        .user-whatsapp-toggle-btn:hover {
+            transform: scale(1.04);
+        }
+
+        .user-unread-dot {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            background: var(--danger);
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 900;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #090d16;
+        }
+
+        .user-unread-dot.active {
+            display: flex;
+        }
+
+        .user-whatsapp-popup {
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            width: 320px;
+            max-height: 450px;
+            background: #0b141a;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            display: none;
+            flex-direction: column;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+        }
+
+        .user-whatsapp-popup.active {
+            display: flex;
+        }
+
+        .u-wa-header {
+            background: #1f2c34;
+            padding: 10px 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #2a3942;
+        }
+
+        .u-wa-header-title {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #e9edef;
+        }
+
+        .u-wa-close-btn {
+            background: none;
+            border: none;
+            color: #8696a0;
+            font-size: 1.15rem;
+            cursor: pointer;
+        }
+
+        .u-wa-messages-body {
+            flex: 1;
+            padding: 12px;
+            overflow-y: auto;
+            max-height: 280px;
+            min-height: 210px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: #0b141a;
+        }
+
+        .u-wa-bubble {
+            max-width: 85%;
+            padding: 8px 10px;
+            border-radius: 8px;
+            font-size: 0.78rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            word-break: break-word;
+        }
+
+        .u-wa-bubble.incoming {
+            background: #202c33;
+            color: #e9edef;
+            align-self: flex-start;
+            border-top-left-radius: 0;
+        }
+
+        .u-wa-bubble.outgoing {
+            background: #005c4b;
+            color: #e9edef;
+            align-self: flex-end;
+            border-top-right-radius: 0;
+        }
+
+        .u-wa-sender {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #25d366;
+        }
+
+        .u-wa-time {
+            font-size: 0.6rem;
+            color: #8696a0;
+            align-self: flex-end;
+        }
+
+        .u-wa-footer {
+            background: #1f2c34;
+            padding: 8px 10px;
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            border-top: 1px solid #2a3942;
+        }
+
+        .u-wa-input {
+            flex: 1;
+            background: #2a3942;
+            border: none;
+            color: #e9edef;
+            padding: 8px 10px;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            outline: none;
+        }
+
+        .u-wa-send-btn {
+            background: #00a884;
+            color: #fff;
+            border: none;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="season-pill" id="season-badge">DLS CHAMPIONSHIP</div>
+            <h1 id="tournament-title">DLS Tournament Hub</h1>
+            <p class="hero-sub">Official matchday headquarters for live standings, squad registration, and match result submissions.</p>
+            <div class="live-meta-bar">
+                <span class="status-dot"></span>
+                <span id="last-updated">Syncing tournament feed...</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <div class="section-label">
+                <span>Tournament Navigation</span>
+                <span id="stage-badge">GROUP & KNOCKOUT HUB</span>
+            </div>
+
+            <div class="portal-grid">
+                <a href="index.html#standings" class="portal-card standings-card">
+                    <div class="portal-top">
+                        <div class="portal-icon">📊</div>
+                        <span class="portal-tag">Live Table</span>
+                    </div>
+                    <div>
+                        <div class="portal-title">Standings Page</div>
+                        <p class="portal-desc">Check live group points, goal difference, fixtures, results, and knockout bracket.</p>
+                    </div>
+                    <div class="portal-cta">
+                        <span>Open Standings</span>
+                        <span>→</span>
+                    </div>
+                </a>
+
+                <a href="register.html" class="portal-card register-card">
+                    <div class="portal-top">
+                        <div class="portal-icon">📝</div>
+                        <span class="portal-tag">Teams & Coaches</span>
+                    </div>
+                    <div>
+                        <div class="portal-title">Register</div>
+                        <p class="portal-desc">Sign up your team and manager profile to enter the tournament roster.</p>
+                    </div>
+                    <div class="portal-cta">
+                        <span>Go to Register</span>
+                        <span>→</span>
+                    </div>
+                </a>
+
+                <a href="results.html" class="portal-card results-card">
+                    <div class="portal-top">
+                        <div class="portal-icon">📤</div>
+                        <span class="portal-tag">Matchday</span>
+                    </div>
+                    <div>
+                        <div class="portal-title">Upload Results Page</div>
+                        <p class="portal-desc">Submit final scorelines, match screenshots, and stats for admin verification.</p>
+                    </div>
+                    <div class="portal-cta">
+                        <span>Upload Result</span>
+                        <span>→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-value" id="kpi-groups">0</div>
+                <div class="kpi-label">Groups</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" id="kpi-teams">0</div>
+                <div class="kpi-label">Registered Teams</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" id="kpi-played">0</div>
+                <div class="kpi-label">Played Matches</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value" id="kpi-qualify">2</div>
+                <div class="kpi-label">Qualify / Group</div>
+            </div>
+        </section>
+
+        <section class="commentary-box">
+            <div class="commentary-header">
+                <span>🎙️ Official Broadcast & Updates</span>
+                <span class="live-dot" title="Live Feed"></span>
+            </div>
+            <div id="live-broadcast-text" class="commentary-body">🔴 LIVE BROADCAST: Welcome to the DLS Tournament Hub! Check Standings for live tables or upload your full-time result after kickoff.</div>
+        </section>
+
+        <section class="guide-card">
+            <div class="section-label" style="margin-bottom: 0;">
+                <span>How Matchdays Work</span>
+            </div>
+            <div class="guide-list">
+                <div class="guide-step">
+                    <div class="guide-step-num">Step 01</div>
+                    <strong>Register Your Squad</strong>
+                    <span>Head to Register to confirm your team name and manager details.</span>
+                </div>
+                <div class="guide-step">
+                    <div class="guide-step-num">Step 02</div>
+                    <strong>Upload Full-Time Result</strong>
+                    <span>Use Upload Results Page with your screenshot after the final whistle.</span>
+                </div>
+                <div class="guide-step">
+                    <div class="guide-step-num">Step 03</div>
+                    <strong>Track the Standings</strong>
+                    <span>Watch approved scores update the Standings Page automatically.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="user-whatsapp-container">
+        <div id="user-whatsapp-popup" class="user-whatsapp-popup">
+            <div class="u-wa-header">
+                <span class="u-wa-header-title">💬 Chat with Admin</span>
+                <button class="u-wa-close-btn" onclick="toggleUserChat()">&times;</button>
+            </div>
+            <div id="u-wa-messages-body" class="u-wa-messages-body">
+                <div style="color: #8696a0; text-align: center; font-size: 0.75rem; padding: 20px;">Connecting to chat...</div>
+            </div>
+            <div class="u-wa-footer">
+                <input type="text" id="u-wa-input" class="u-wa-input" placeholder="Type message / dispute..." onkeypress="handleUserWaKeyPress(event)">
+                <button class="u-wa-send-btn" onclick="sendUserMessage()">➤</button>
+            </div>
+        </div>
+        <button class="user-whatsapp-toggle-btn" onclick="toggleUserChat()" title="Chat with Admin">
+            💬 Contact Admin
+            <span id="user-unread-dot" class="user-unread-dot">0</span>
+        </button>
+    </div>
+
+    <footer>Powered by steven mugenyi • DLS Tournament System</footer>
+
+    <script>
+        const GITHUB_RAW_URL = "https://raw.githubusercontent.com/Leonhex09/New-dls/main/data.json";
+        const BIN_ID = "6afbe4a4ffd5d16053c77e7e";
+        const MASTER_KEY = "$2a$10$B85FPn9jz1K3QxcgtPbRdeNdinTlUJnKBqQg5Pj31ZE.G9D4.NzqO";
+
+        let tournamentData = null;
+        let userChatPollInterval = null;
+
+        window.addEventListener("DOMContentLoaded", () => {
+            loadHomeData();
+            setInterval(loadHomeData, 10000);
+            setInterval(backgroundPollUnread, 6000);
+        });
+
+        async function loadHomeData() {
+            const local = localStorage.getItem("dls_admin_draft");
+            if (local) {
+                try {
+                    tournamentData = JSON.parse(local);
+                    renderHomeMetrics();
+                } catch (e) {}
+            }
+
+            try {
+                const res = await fetch(`${GITHUB_RAW_URL}?t=${Date.now()}`, { cache: "no-store" });
+                if (res.ok) {
+                    tournamentData = await res.json();
+                    renderHomeMetrics();
+                }
+            } catch (e) {}
+        }
+
+        function renderHomeMetrics() {
+            if (!tournamentData) return;
+
+            document.getElementById("tournament-title").textContent =
+                tournamentData.tournamentName || "DLS Tournament Hub";
+            document.getElementById("season-badge").textContent =
+                tournamentData.season || "DLS CHAMPIONSHIP";
+            document.getElementById("last-updated").textContent =
+                `Updated: ${tournamentData.lastUpdated || "Just now"}`;
+
+            const groups = Array.isArray(tournamentData.groups) ? tournamentData.groups : [];
+            const matches = Array.isArray(tournamentData.matches) ? tournamentData.matches : [];
+            const qualifyCount = tournamentData.qualifyCount ?? 2;
+
+            const uniqueTeams = new Set();
+            groups.forEach(g => (g.teams || []).forEach(t => uniqueTeams.add(t)));
+            if (tournamentData.managers && typeof tournamentData.managers === "object") {
+                Object.keys(tournamentData.managers).forEach(t => uniqueTeams.add(t));
+            }
+
+            const playedCount = matches.filter(m =>
+                m.status === "played" && m.homeScore !== null && m.awayScore !== null
+            ).length;
+
+            document.getElementById("kpi-groups").textContent = groups.length;
+            document.getElementById("kpi-teams").textContent = uniqueTeams.size;
+            document.getElementById("kpi-played").textContent = playedCount;
+            document.getElementById("kpi-qualify").textContent = qualifyCount;
+
+            const sf1 = matches.find(m => m.round === "Semi-Final 1");
+            const sf2 = matches.find(m => m.round === "Semi-Final 2");
+            const stageEl = document.getElementById("stage-badge");
+            if (stageEl) {
+                if (sf1 && sf2 && sf1.status === "played" && sf2.status === "played") {
+                    stageEl.textContent = "🏆 GRAND FINAL STAGE";
+                } else if (matches.some(m => m.round && m.round.includes("Semi"))) {
+                    stageEl.textContent = "🔥 KNOCKOUT STAGE";
+                } else {
+                    stageEl.textContent = "⚽ GROUP STAGE";
+                }
+            }
+
+            const broadcastEl = document.getElementById("live-broadcast-text");
+            if (broadcastEl) {
+                broadcastEl.textContent = (tournamentData.commentary && tournamentData.commentary.trim() !== "")
+                    ? tournamentData.commentary
+                    : "🔴 LIVE BROADCAST: Welcome to the DLS Tournament Hub! Check Standings for live tables or upload your full-time result after kickoff.";
+            }
+        }
+
+        async function backgroundPollUnread() {
+            const popup = document.getElementById("user-whatsapp-popup");
+            if (popup.classList.contains("active")) return;
+
+            const senderName = localStorage.getItem("dls_user_name");
+            if (!senderName) return;
+
+            try {
+                const res = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { "X-Master-Key": MASTER_KEY }
+                });
+                const data = await res.json();
+                const messages = data.record.messages || [];
+
+                const userThread = messages.filter(m =>
+                    m.sender === senderName || m.target === senderName || m.sender === "Admin"
+                );
+                const adminMsgs = userThread.filter(m => m.sender === "Admin");
+                const unreadSeenKey = "dls_user_last_read_" + senderName;
+                const lastReadCount = Number(localStorage.getItem(unreadSeenKey) || 0);
+
+                if (adminMsgs.length > lastReadCount) {
+                    const unreadCount = adminMsgs.length - lastReadCount;
+                    const dot = document.getElementById("user-unread-dot");
+                    dot.textContent = unreadCount;
+                    dot.classList.add("active");
+                }
+            } catch (e) {}
+        }
+
+        function toggleUserChat() {
+            const popup = document.getElementById("user-whatsapp-popup");
+            popup.classList.toggle("active");
+
+            if (popup.classList.contains("active")) {
+                const senderName = localStorage.getItem("dls_user_name");
+                if (senderName) {
+                    fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                        headers: { "X-Master-Key": MASTER_KEY }
+                    }).then(res => res.json()).then(data => {
+                        const messages = data.record.messages || [];
+                        const adminMsgs = messages
+                            .filter(m => m.sender === senderName || m.target === senderName || m.sender === "Admin")
+                            .filter(m => m.sender === "Admin");
+                        localStorage.setItem("dls_user_last_read_" + senderName, adminMsgs.length);
+                    });
+                }
+                document.getElementById("user-unread-dot").classList.remove("active");
+
+                fetchUserMessages();
+                if (!userChatPollInterval) {
+                    userChatPollInterval = setInterval(fetchUserMessages, 5000);
+                }
+            } else if (userChatPollInterval) {
+                clearInterval(userChatPollInterval);
+                userChatPollInterval = null;
+            }
+        }
+
+        async function fetchUserMessages() {
+            const body = document.getElementById("u-wa-messages-body");
+            const senderName = localStorage.getItem("dls_user_name");
+
+            try {
+                const res = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { "X-Master-Key": MASTER_KEY }
+                });
+                const data = await res.json();
+                const messages = data.record.messages || [];
+
+                const threadMessages = senderName
+                    ? messages.filter(m => m.sender === senderName || m.target === senderName || m.sender === "Admin")
+                    : messages;
+
+                if (threadMessages.length === 0) {
+                    body.innerHTML = `<div style="color: #8696a0; text-align: center; font-size: 0.75rem; padding: 20px;">No messages yet. Send a message to the admin!</div>`;
+                    return;
+                }
+
+                body.innerHTML = threadMessages.slice().reverse().map(msg => {
+                    const isAdmin = msg.sender === "Admin";
+                    return `
+                        <div class="u-wa-bubble ${isAdmin ? "incoming" : "outgoing"}">
+                            <span class="u-wa-sender">${escapeHtml(msg.sender)}</span>
+                            <span>${escapeHtml(msg.message)}</span>
+                            <span class="u-wa-time">${escapeHtml(msg.timestamp)}</span>
+                        </div>
+                    `;
+                }).join("");
+                body.scrollTop = body.scrollHeight;
+            } catch (err) {
+                body.innerHTML = `<div style="color: #ef4444; text-align: center; font-size: 0.75rem; padding: 20px;">Failed to load chat.</div>`;
+            }
+        }
+
+        async function sendUserMessage() {
+            const input = document.getElementById("u-wa-input");
+            const text = input.value.trim();
+            if (!text) return;
+
+            let senderName = localStorage.getItem("dls_user_name");
+            if (!senderName) {
+                senderName = prompt("Enter your Team/Manager Name:") || "Coach / Player";
+                localStorage.setItem("dls_user_name", senderName);
+            }
+
+            input.value = "";
+
+            try {
+                const getRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { "X-Master-Key": MASTER_KEY }
+                });
+                const getData = await getRes.json();
+                const currentMessages = getData.record.messages || [];
+
+                currentMessages.unshift({
+                    sender: senderName,
+                    message: text,
+                    timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+                });
+
+                const putRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Master-Key": MASTER_KEY
+                    },
+                    body: JSON.stringify({ messages: currentMessages })
+                });
+
+                if (putRes.ok) {
+                    fetchUserMessages();
+                }
+            } catch (err) {
+                alert("Failed to send message.");
+            }
+        }
+
+        function handleUserWaKeyPress(e) {
+            if (e.key === "Enter") {
+                sendUserMessage();
+            }
+        }
+
+        function escapeHtml(str) {
+            return String(str ?? "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;");
+        }
+    </script>
+</body>
+</html>
