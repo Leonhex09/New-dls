@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "11/21/2026, 9:07:38 AM",
+  "lastUpdated": "11/21/2026, 9:08:28 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -21,40 +21,13 @@
   ],
   "matches": [],
   "managers": {
-    "AbRAMZ FC": "Amos",
-    "STARBOY FC": "Brave",
-    "DIAMOND FOX FC": {
-      "name": "Mukasa",
-      "trackerId": "",
-      "clubTag": "DFO"
-    },
     "AFRICHESTER FC": "Zlatan",
-    "RANKS FC": "Lumonde",
-    "FINIX FC": "Professor ",
-    "CHRIS JEYS FC": "Umar",
-    "MAN WE GO FC": "Garry",
-    "HARTS FC": "Lito",
-    "ENERGY FC": "Abdu",
-    "GAZA FC": "Chris",
-    "PAT5": "Fahad",
-    "Afc": "Zlatan",
-    "Arsenal": "Brave",
-    "Uganda": "Harts",
-    "Yuni": "Rins",
-    "Finx": "Her",
-    "Rinx": "Tins",
     "Gunners": "Starboy",
     "Abrams fc": "Amos abrams",
     "Kitooro fc": "Arez"
   },
   "commentary": "",
   "teamRatings": {
-    "Afc": 50.4,
-    "Arsenal": 50.6,
-    "Uganda": 50.9,
-    "Yuni": 80,
-    "Finx": 80.5,
-    "Rinx": 80,
     "AFRICHESTER FC": 84.5,
     "Gunners": 54.5,
     "Abrams fc": 61.7,
