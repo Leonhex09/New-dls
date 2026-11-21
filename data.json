@@ -1,13 +1,14 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 21, 08:29 PM",
+  "lastUpdated": "Nov 21, 08:31 PM",
   "qualifyCount": 0,
   "groups": [
     {
       "name": "Tier 1 Group A",
       "teams": [
-        "AFRICHESTER FC"
+        "AFRICHESTER FC",
+        "STRAIGHT UNIT"
       ]
     },
     {
@@ -21,12 +22,14 @@
   "managers": {
     "AFRICHESTER FC": "Zlatan",
     "Chelsea": "Enzo",
-    "A disturbed": "Owori joseph"
+    "A disturbed": "Owori joseph",
+    "STRAIGHT UNIT": "Manager TBD"
   },
   "teamRatings": {
     "AFRICHESTER FC": 84.5,
     "Chelsea": 78,
-    "A disturbed": 56.5
+    "A disturbed": 56.5,
+    "STRAIGHT UNIT": 91.4
   },
   "knownTeamsPool": [
     {
@@ -43,6 +46,11 @@
       "team": "A disturbed",
       "manager": "Owori joseph",
       "rating": 56.5
+    },
+    {
+      "team": "STRAIGHT UNIT",
+      "manager": "Manager TBD",
+      "rating": 91.4
     }
   ],
   "commentary": "Hey there wait for your next fixture ",
