@@ -3,24 +3,7 @@
   "season": "SEASON 1• GROUP STAGE",
   "lastUpdated": "Nov 21, 07:26 AM",
   "qualifyCount": 2,
-  "groups": [
-    {
-      "name": "Tier 1 (High Rated)",
-      "teams": [
-        "Finx",
-        "Yuni",
-        "Rinx"
-      ]
-    },
-    {
-      "name": "Tier 2 (Mid/Low Rated)",
-      "teams": [
-        "Uganda",
-        "Arsenal",
-        "Afc"
-      ]
-    }
-  ],
+  "groups": [],
   "matches": [
     {
       "id": 1794896765626,
