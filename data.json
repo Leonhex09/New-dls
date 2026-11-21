@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 21, 03:21 PM",
+  "lastUpdated": "Nov 21, 03:22 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -29,68 +29,6 @@
       "awayScore": null,
       "status": "upcoming",
       "stats": null
-    },
-    {
-      "id": 1795244424819,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "venue": "Stadium",
-      "home": "AFRICHESTER FC",
-      "away": "Chelsea",
-      "homeScore": 8,
-      "awayScore": 0,
-      "status": "played",
-      "stats": {
-        "possession": [
-          51,
-          49
-        ],
-        "shots": [
-          4,
-          3
-        ],
-        "onTarget": [
-          2,
-          1
-        ],
-        "tackles": [
-          6,
-          4
-        ],
-        "passes": [
-          39,
-          27
-        ],
-        "corners": [
-          1,
-          0
-        ],
-        "fouls": [
-          0,
-          0
-        ],
-        "bookings": [
-          0,
-          0
-        ],
-        "offsides": [
-          0,
-          0
-        ],
-        "passCompletion": [
-          88,
-          79
-        ],
-        "shotAccuracy": [
-          75,
-          33
-        ],
-        "tackleSuccess": [
-          100,
-          50
-        ]
-      }
     }
   ],
   "managers": {
@@ -114,5 +52,5 @@
     }
   ],
   "commentary": "",
-  "tierMovementApplied": true
+  "tierMovementApplied": false
 }
