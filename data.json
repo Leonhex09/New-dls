@@ -1,12 +1,15 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 21, 2026, 9:42 AM",
+  "lastUpdated": "Nov 21, 10:00 AM",
   "qualifyCount": 0,
   "groups": [
     {
       "name": "Tier 1 Group A",
-      "teams": []
+      "teams": [
+        "AFRICHESTER FC",
+        "Chelsea"
+      ]
     },
     {
       "name": "Tier 2 Group A",
@@ -15,71 +18,55 @@
   ],
   "matches": [
     {
-      "id": 0,
+      "id": 1795244407457,
+      "group": "Knockout",
+      "round": "Final",
+      "stageRound": "Final",
+      "roundOrder": 1,
+      "matchIndexInRound": 0,
+      "date": "Final",
+      "venue": "Stadium A",
+      "home": "AFRICHESTER FC",
+      "away": "Chelsea",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "stats": null
+    },
+    {
+      "id": 1795244424819,
       "group": "Tier 1 Group A",
       "round": "Matchday 1",
       "date": "Matchday 1",
       "venue": "Stadium",
-      "home": "TBD",
-      "away": "TBD",
-      "homeScore": 0,
-      "awayScore": 0,
+      "home": "AFRICHESTER FC",
+      "away": "Chelsea",
+      "homeScore": null,
+      "awayScore": null,
       "status": "upcoming",
-      "stats": {
-        "possession": [
-          0,
-          0
-        ],
-        "shots": [
-          0,
-          0
-        ],
-        "onTarget": [
-          0,
-          0
-        ],
-        "tackles": [
-          0,
-          0
-        ],
-        "passes": [
-          0,
-          0
-        ],
-        "corners": [
-          0,
-          0
-        ],
-        "fouls": [
-          0,
-          0
-        ],
-        "bookings": [
-          0,
-          0
-        ],
-        "offsides": [
-          0,
-          0
-        ],
-        "passCompletion": [
-          0,
-          0
-        ],
-        "shotAccuracy": [
-          0,
-          0
-        ],
-        "tackleSuccess": [
-          0,
-          0
-        ]
-      }
+      "stats": null
     }
   ],
-  "managers": {},
-  "teamRatings": {},
-  "knownTeamsPool": [],
+  "managers": {
+    "AFRICHESTER FC": "Zlatan",
+    "Chelsea": "Enzo"
+  },
+  "teamRatings": {
+    "AFRICHESTER FC": 84.5,
+    "Chelsea": 78
+  },
+  "knownTeamsPool": [
+    {
+      "team": "AFRICHESTER FC",
+      "manager": "Zlatan",
+      "rating": 84.5
+    },
+    {
+      "team": "Chelsea",
+      "manager": "Enzo",
+      "rating": 78
+    }
+  ],
   "commentary": "",
   "tierMovementApplied": false
 }
