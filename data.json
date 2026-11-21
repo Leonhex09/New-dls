@@ -1,29 +1,23 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 18, 10:53 AM",
+  "lastUpdated": "Nov 21, 07:16 AM",
   "qualifyCount": 2,
   "groups": [
     {
-      "name": "Group A",
+      "name": "Tier 1 (High Rated)",
       "teams": [
-        "PAT5",
-        "GAZA FC",
-        "AFRICHESTER FC",
-        "DIAMOND FOX FC",
-        "ENERGY FC",
-        "STARBOY FC"
+        "Finx",
+        "Yuni",
+        "Rinx"
       ]
     },
     {
-      "name": "Group B",
+      "name": "Tier 2 (Mid/Low Rated)",
       "teams": [
-        "AbRAMZ FC",
-        "FINIX FC",
-        "CHRIS JEYS FC",
-        "MAN WE GO FC",
-        "RANKS FC",
-        "HARTS FC"
+        "Uganda",
+        "Arsenal",
+        "Afc"
       ]
     }
   ],
@@ -473,7 +467,21 @@
     "HARTS FC": "Lito",
     "ENERGY FC": "Abdu",
     "GAZA FC": "Chris",
-    "PAT5": "Fahad"
+    "PAT5": "Fahad",
+    "Afc": "Zlatan",
+    "Arsenal": "Brave",
+    "Uganda": "Harts",
+    "Yuni": "Rins",
+    "Finx": "Her",
+    "Rinx": "Tins"
   },
-  "commentary": "Managers, players, and legends of the pitch—welcome to the arena.\nWe didn't come this far just to play games. We came here to write history.\nEvery single match you’ve fought, every hard-earned victory, every last-minute goal, and every tactical battle has led to this exact moment. To the coaches pacing the sidelines: your strategy and composure are being tested. To the players stepping onto the turf: this is your stage to shine under the floodlights.\nRemember why we started this journey. It’s not just about the stats, the tables, or the scorelines—it’s about glory, rivalry, and the relentless drive to lift that trophy.\nKeep your focus sharp, play with honor, leave everything out on the pitch, and let the best team win.\nThe stadium is packed. The whistle is about to blow. Let the games begin"
+  "commentary": "Managers, players, and legends of the pitch—welcome to the arena.\nWe didn't come this far just to play games. We came here to write history.\nEvery single match you’ve fought, every hard-earned victory, every last-minute goal, and every tactical battle has led to this exact moment. To the coaches pacing the sidelines: your strategy and composure are being tested. To the players stepping onto the turf: this is your stage to shine under the floodlights.\nRemember why we started this journey. It’s not just about the stats, the tables, or the scorelines—it’s about glory, rivalry, and the relentless drive to lift that trophy.\nKeep your focus sharp, play with honor, leave everything out on the pitch, and let the best team win.\nThe stadium is packed. The whistle is about to blow. Let the games begin",
+  "teamRatings": {
+    "Afc": 50.4,
+    "Arsenal": 50.6,
+    "Uganda": 50.9,
+    "Yuni": 80,
+    "Finx": 80.5,
+    "Rinx": 80
+  }
 }
