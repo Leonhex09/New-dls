@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 21, 09:31 AM",
+  "lastUpdated": "Nov 21, 09:40 AM",
   "qualifyCount": 2,
   "groups": [
     {
@@ -19,7 +19,50 @@
       ]
     }
   ],
-  "matches": [],
+  "matches": [
+    {
+      "id": 1795243170995,
+      "group": "Knockout",
+      "round": "Final",
+      "stageRound": "Final",
+      "roundOrder": 1,
+      "matchIndexInRound": 0,
+      "date": "Final",
+      "venue": "Stadium A",
+      "home": "AFRICHESTER FC",
+      "away": "Kitooro fc",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "stats": null
+    },
+    {
+      "id": 1795243224654,
+      "group": "Tier 1 Group A",
+      "round": "Matchday 1",
+      "date": "Matchday 1",
+      "venue": "Stadium",
+      "home": "AFRICHESTER FC",
+      "away": "Kitooro fc",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "stats": null
+    },
+    {
+      "id": 1795243224656,
+      "group": "Tier 2 Group A",
+      "round": "Matchday 1",
+      "date": "Matchday 1",
+      "venue": "Stadium",
+      "home": "Abrams fc",
+      "away": "Gunners",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "stats": null
+    }
+  ],
   "managers": {
     "AFRICHESTER FC": "Zlatan",
     "Gunners": "Starboy",
