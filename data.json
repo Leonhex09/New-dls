@@ -13,24 +13,7 @@
       "teams": []
     }
   ],
-  "matches": [
-    {
-      "id": 1795244407457,
-      "group": "Knockout",
-      "round": "Final",
-      "stageRound": "Final",
-      "roundOrder": 1,
-      "matchIndexInRound": 0,
-      "date": "Final",
-      "venue": "Stadium A",
-      "home": "AFRICHESTER FC",
-      "away": "Chelsea",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null
-    }
-  ],
+  "matches": [],
   "managers": {
     "AFRICHESTER FC": "Zlatan",
     "Chelsea": "Enzo"
@@ -51,6 +34,6 @@
       "rating": 78
     }
   ],
-  "commentary": "",
+  "commentary": "Hey there wait for your next fixture ",
   "tierMovementApplied": false
 }
