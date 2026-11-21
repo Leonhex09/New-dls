@@ -1,9 +1,24 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 21, 08:38 AM",
+  "lastUpdated": "Nov 21, 08:41 AM",
   "qualifyCount": 2,
-  "groups": [],
+  "groups": [
+    {
+      "name": "Tier 1 (High Rated)",
+      "teams": [
+        "AFRICHESTER FC",
+        "Kitooro fc"
+      ]
+    },
+    {
+      "name": "Tier 2 (Mid/Low Rated)",
+      "teams": [
+        "Abrams fc",
+        "Gunners"
+      ]
+    }
+  ],
   "matches": [
     {
       "id": 1794896765626,
@@ -438,11 +453,7 @@
       "trackerId": "",
       "clubTag": "DFO"
     },
-    "AFRICHESTER FC": {
-      "name": "Star",
-      "trackerId": "1sw178v2",
-      "clubTag": "AFC"
-    },
+    "AFRICHESTER FC": "Zlatan",
     "RANKS FC": "Lumonde",
     "FINIX FC": "Professor ",
     "CHRIS JEYS FC": "Umar",
@@ -456,7 +467,10 @@
     "Uganda": "Harts",
     "Yuni": "Rins",
     "Finx": "Her",
-    "Rinx": "Tins"
+    "Rinx": "Tins",
+    "Gunners": "Starboy",
+    "Abrams fc": "Amos abrams",
+    "Kitooro fc": "Arez"
   },
   "commentary": "Managers, players, and legends of the pitch—welcome to the arena.\nWe didn't come this far just to play games. We came here to write history.\nEvery single match you’ve fought, every hard-earned victory, every last-minute goal, and every tactical battle has led to this exact moment. To the coaches pacing the sidelines: your strategy and composure are being tested. To the players stepping onto the turf: this is your stage to shine under the floodlights.\nRemember why we started this journey. It’s not just about the stats, the tables, or the scorelines—it’s about glory, rivalry, and the relentless drive to lift that trophy.\nKeep your focus sharp, play with honor, leave everything out on the pitch, and let the best team win.\nThe stadium is packed. The whistle is about to blow. Let the games begin",
   "teamRatings": {
@@ -465,6 +479,10 @@
     "Uganda": 50.9,
     "Yuni": 80,
     "Finx": 80.5,
-    "Rinx": 80
+    "Rinx": 80,
+    "AFRICHESTER FC": 84.5,
+    "Gunners": 54.5,
+    "Abrams fc": 61.7,
+    "Kitooro fc": 76.4
   }
 }
