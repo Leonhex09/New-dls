@@ -36,10 +36,9 @@
             color: var(--text-main);
             line-height: 1.45;
             min-height: 100vh;
-            padding-bottom: 84px;
+            padding-bottom: 105px;
         }
 
-        /* --- HERO HEADER --- */
         .hero {
             background: linear-gradient(180deg, rgba(16, 23, 38, 0.95) 0%, rgba(9, 13, 22, 0.7) 100%);
             border-bottom: 1px solid var(--border);
@@ -104,17 +103,15 @@
             box-shadow: 0 0 8px var(--accent);
         }
 
-        /* --- MAIN CONTAINER --- */
         .container {
             max-width: 880px;
             margin: 22px auto 0 auto;
-            padding: 0 14px;
+            padding: 0 14px 24px 14px;
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        /* --- PRIMARY ACTION PORTAL CARDS --- */
         .section-label {
             font-size: 0.76rem;
             font-weight: 800;
@@ -151,8 +148,6 @@
             padding: 18px 16px;
             color: var(--text-main);
             transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-            position: relative;
-            overflow: hidden;
         }
 
         .portal-card:hover {
@@ -253,7 +248,6 @@
         .register-card .portal-cta { color: #60a5fa; }
         .results-card .portal-cta { color: #fbbf24; }
 
-        /* --- LIVE KPI STRIP --- */
         .kpi-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -289,7 +283,6 @@
             margin-top: 2px;
         }
 
-        /* --- BROADCAST COMMENTARY BOX --- */
         @keyframes borderGlowPulse {
             0% { border-image: linear-gradient(to bottom, #00e676 0%, rgba(0, 230, 118, 0.3) 70%, transparent 100%) 1; }
             33% { border-image: linear-gradient(to bottom, #3b82f6 0%, rgba(59, 130, 246, 0.3) 70%, transparent 100%) 1; }
@@ -347,7 +340,6 @@
             animation: textPulsate 3s infinite ease-in-out;
         }
 
-        /* --- QUICK GUIDE STRIP --- */
         .guide-card {
             background: linear-gradient(135deg, #131a2a 0%, #0d1320 100%);
             border: 1px solid var(--border);
@@ -395,7 +387,6 @@
             color: var(--text-muted);
         }
 
-        /* --- ADMIN CHAT WIDGET --- */
         .user-whatsapp-container {
             position: fixed;
             bottom: 20px;
@@ -573,7 +564,7 @@
             text-align: center;
             color: var(--text-muted);
             font-size: 0.72rem;
-            margin-top: 32px;
+            margin-top: 24px;
         }
     </style>
 </head>
@@ -751,6 +742,29 @@
             } catch (e) {}
         }
 
+        function countAccurateTeams(data) {
+            const groups = Array.isArray(data.groups) ? data.groups : [];
+            const groupTeams = new Set();
+
+            groups.forEach(g => {
+                (g.teams || []).forEach(t => {
+                    if (typeof t === "string" && t.trim() !== "") {
+                        groupTeams.add(t.trim());
+                    }
+                });
+            });
+
+            if (groupTeams.size > 0) {
+                return groupTeams.size;
+            }
+
+            if (Array.isArray(data.registeredTeams)) {
+                return data.registeredTeams.filter(Boolean).length;
+            }
+
+            return 0;
+        }
+
         function renderHomeMetrics() {
             if (!tournamentData) return;
 
@@ -765,18 +779,13 @@
             const matches = Array.isArray(tournamentData.matches) ? tournamentData.matches : [];
             const qualifyCount = tournamentData.qualifyCount ?? 2;
 
-            const uniqueTeams = new Set();
-            groups.forEach(g => (g.teams || []).forEach(t => uniqueTeams.add(t)));
-            if (tournamentData.managers && typeof tournamentData.managers === "object") {
-                Object.keys(tournamentData.managers).forEach(t => uniqueTeams.add(t));
-            }
-
+            const teamCount = countAccurateTeams(tournamentData);
             const playedCount = matches.filter(m =>
                 m.status === "played" && m.homeScore !== null && m.awayScore !== null
             ).length;
 
             document.getElementById("kpi-groups").textContent = groups.length;
-            document.getElementById("kpi-teams").textContent = uniqueTeams.size;
+            document.getElementById("kpi-teams").textContent = teamCount;
             document.getElementById("kpi-played").textContent = playedCount;
             document.getElementById("kpi-qualify").textContent = qualifyCount;
 
@@ -788,8 +797,10 @@
                     stageEl.textContent = "🏆 GRAND FINAL STAGE";
                 } else if (matches.some(m => m.round && m.round.includes("Semi"))) {
                     stageEl.textContent = "🔥 KNOCKOUT STAGE";
-                } else {
+                } else if (groups.length > 0) {
                     stageEl.textContent = "⚽ GROUP STAGE";
+                } else {
+                    stageEl.textContent = "⏳ PRE-SEASON / SETUP";
                 }
             }
 
