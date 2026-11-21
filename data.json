@@ -14,7 +14,8 @@
     {
       "name": "Tier 2 Group A",
       "teams": [
-        "A disturbed"
+        "A disturbed",
+        "Gunners"
       ]
     }
   ],
@@ -23,13 +24,15 @@
     "AFRICHESTER FC": "Zlatan",
     "Chelsea": "Enzo",
     "A disturbed": "Owori joseph",
-    "STRAIGHT UNIT": "Manager TBD"
+    "STRAIGHT UNIT": "Manager TBD",
+    "Gunners": "Manager TBD"
   },
   "teamRatings": {
     "AFRICHESTER FC": 84.5,
     "Chelsea": 78,
     "A disturbed": 56.5,
-    "STRAIGHT UNIT": 91.4
+    "STRAIGHT UNIT": 91.4,
+    "Gunners": 61.4
   },
   "knownTeamsPool": [
     {
@@ -51,6 +54,11 @@
       "team": "STRAIGHT UNIT",
       "manager": "Manager TBD",
       "rating": 91.4
+    },
+    {
+      "team": "Gunners",
+      "manager": "Manager TBD",
+      "rating": 61.4
     }
   ],
   "commentary": "Hey there wait for your next fixture ",
