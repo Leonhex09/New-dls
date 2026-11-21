@@ -1,15 +1,12 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 21, 10:04 AM",
+  "lastUpdated": "Nov 21, 03:21 PM",
   "qualifyCount": 0,
   "groups": [
     {
       "name": "Tier 1 Group A",
-      "teams": [
-        "AFRICHESTER FC",
-        "Chelsea"
-      ]
+      "teams": []
     },
     {
       "name": "Tier 2 Group A",
