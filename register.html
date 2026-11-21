@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DLS Tournament Team Registration</title>
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --bg-card: #131a2a;
+            --bg-input: #0d1320;
+            --accent: #00e676;
+            --accent-hover: #00c865;
+            --accent-glow: rgba(0, 230, 118, 0.35);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #232d42;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px 12px;
+        }
+
+        .reg-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px 18px;
+            width: 100%;
+            max-width: 440px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent-glow);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            font-size: 0.68rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+        .badge.locked {
+            background: rgba(239, 68, 68, 0.16);
+            color: var(--danger);
+            border-color: var(--danger);
+        }
+
+        .btn-inbox-pill {
+            background: #1e293b;
+            color: var(--accent);
+            border: 1px solid rgba(0, 230, 118, 0.4);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.68rem;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .btn-inbox-pill:hover { background: rgba(0, 230, 118, 0.12); }
+
+        h1 { font-size: 1.35rem; font-weight: 800; margin-bottom: 4px; }
+        p.subtitle { color: var(--text-muted); font-size: 0.8rem; margin-bottom: 12px; }
+
+        .slot-bar {
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 9px 12px;
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+
+        .locked-banner {
+            background: rgba(239, 68, 68, 0.12);
+            border: 1px solid var(--danger);
+            color: #fca5a5;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 14px;
+            font-size: 0.8rem;
+            text-align: center;
+            display: none;
+        }
+        .locked-banner.active { display: block; }
+        .locked-banner strong { display: block; color: var(--danger); font-size: 0.9rem; margin-bottom: 4px; }
+
+        .btn-reopen-popup {
+            margin-top: 8px;
+            background: var(--accent);
+            color: #050a14;
+            border: none;
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-size: 0.76rem;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .btn-reopen-popup:hover { background: var(--accent-hover); }
+
+        .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
+        label { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); }
+        input, textarea {
+            background: var(--bg-input);
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            padding: 10px 12px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            outline: none;
+            transition: border-color 0.2s;
+            width: 100%;
+        }
+        input:focus, textarea:focus { border-color: var(--accent); }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--accent);
+            color: #050a14;
+            border: none;
+            padding: 11px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            cursor: pointer;
+            margin-top: 4px;
+            box-shadow: 0 0 15px var(--accent-glow);
+            transition: background 0.2s;
+        }
+        .btn-submit:hover { background: var(--accent-hover); }
+        .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; box-shadow: none; }
+
+        .status-msg {
+            margin-top: 12px;
+            padding: 9px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+            display: none;
+        }
+        .status-msg.success { display: block; background: rgba(0, 230, 118, 0.15); color: var(--accent); border: 1px solid var(--accent); }
+        .status-msg.error { display: block; background: rgba(239, 68, 68, 0.15); color: var(--danger); border: 1px solid var(--danger); }
+
+        /* COMPACT CONFIRMED TEAMS STRIP (NO VERTICAL PAGE GROWTH) */
+        .registered-list-box {
+            margin-top: 16px;
+            border-top: 1px solid var(--border);
+            padding-top: 12px;
+        }
+        .registered-list-box h2 {
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .teams-strip {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 6px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent) var(--bg-input);
+        }
+        .teams-strip::-webkit-scrollbar { height: 5px; }
+        .teams-strip::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+
+        .team-chip {
+            flex: 0 0 auto;
+            min-width: 145px;
+            max-width: 175px;
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            padding: 8px 10px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 0.78rem;
+        }
+        .team-chip-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 6px;
+        }
+        .team-chip strong {
+            color: var(--text-main);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 0.78rem;
+        }
+        .team-chip span.coach-sub {
+            color: var(--text-muted);
+            font-size: 0.68rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .rating-pill {
+            background: rgba(0, 230, 118, 0.14);
+            color: var(--accent);
+            border: 1px solid rgba(0, 230, 118, 0.4);
+            padding: 1px 6px;
+            border-radius: 6px;
+            font-size: 0.68rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        /* POP-UP MODAL FOR LOCKED REGISTRATION + REPLIES */
+        .lock-modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(5, 8, 16, 0.85);
+            backdrop-filter: blur(5px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            z-index: 2000;
+        }
+        .lock-modal-backdrop.active { display: flex; }
+
+        .lock-modal-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            width: 100%;
+            max-width: 410px;
+            max-height: 88vh;
+            overflow-y: auto;
+            padding: 18px 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+        }
+        .lock-modal-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .lock-modal-top h3 {
+            color: var(--accent);
+            font-size: 0.95rem;
+            font-weight: 800;
+        }
+        .close-modal-btn {
+            background: #1e293b;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            width: 28px;
+            height: 28px;
+            border-radius: 7px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .lock-modal-desc {
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        /* CONVERSATION / REPLIES BOX */
+        .replies-box {
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            padding: 10px;
+            margin-bottom: 12px;
+        }
+        .replies-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        .btn-refresh-replies {
+            background: #1e293b;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.68rem;
+            cursor: pointer;
+        }
+        .thread-feed {
+            max-height: 155px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .bubble-msg {
+            padding: 7px 9px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            line-height: 1.3;
+            word-break: break-word;
+        }
+        .bubble-msg.user-msg {
+            background: #1e293b;
+            color: var(--text-main);
+            align-self: flex-end;
+            max-width: 88%;
+        }
+        .bubble-msg.admin-reply {
+            background: rgba(0, 230, 118, 0.14);
+            border: 1px solid rgba(0, 230, 118, 0.35);
+            color: #dcfce7;
+            align-self: flex-start;
+            max-width: 88%;
+        }
+        .bubble-meta {
+            display: block;
+            font-size: 0.62rem;
+            color: var(--text-muted);
+            margin-top: 3px;
+        }
+
+        .modal-feedback {
+            margin-top: 8px;
+            font-size: 0.76rem;
+            font-weight: 700;
+            text-align: center;
+            display: none;
+            padding: 7px;
+            border-radius: 7px;
+        }
+        .modal-feedback.ok {
+            display: block;
+            background: rgba(0, 230, 118, 0.14);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+        .modal-feedback.err {
+            display: block;
+            background: rgba(239, 68, 68, 0.14);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .back-link {
+            margin-top: 14px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+        .back-link:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+    <div class="reg-card">
+        <div class="top-row">
+            <div class="badge" id="reg-badge">REGISTRATION OPEN</div>
+            <button type="button" class="btn-inbox-pill" onclick="openLockPopup()">💬 Chat & Replies</button>
+        </div>
+
+        <h1>Register Your Team</h1>
+        <p class="subtitle">Enter your DLS club, team rating, and manager details.</p>
+
+        <div class="slot-bar">
+            <span>Slots Filled</span>
+            <span id="slots-status" style="color: var(--accent);">0 / Unlimited</span>
+        </div>
+
+        <div id="locked-banner" class="locked-banner">
+            <strong>🔒 Registration Locked</strong>
+            Team registration is full or locked by the admin. Message the admin and check replies in the pop-up.
+            <div>
+                <button type="button" class="btn-reopen-popup" onclick="openLockPopup()">💬 Open Admin Chat & Replies</button>
+            </div>
+        </div>
+
+        <form id="reg-form" onsubmit="submitRegistration(event)">
+            <div class="form-group">
+                <label for="team-name">DLS Club / Team Name *</label>
+                <input type="text" id="team-name" placeholder="e.g. Real Madrid FC" required maxlength="30">
+            </div>
+
+            <div class="form-group">
+                <label for="team-rating">DLS Team Rating (e.g. 75.0 – 95.0) *</label>
+                <input type="number" id="team-rating" step="0.1" min="50" max="99.9" placeholder="e.g. 84.5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="manager-name">Manager / Coach Name *</label>
+                <input type="text" id="manager-name" placeholder="e.g. Coach Alex" required maxlength="30">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-info">WhatsApp / Discord (Optional)</label>
+                <input type="text" id="contact-info" placeholder="For match scheduling" maxlength="40">
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn-submit">⚽ Submit Registration</button>
+        </form>
+
+        <div id="status-msg" class="status-msg"></div>
+
+        <!-- HORIZONTAL COMPACT STRIP SO PAGE DOES NOT GROW TALL -->
+        <div class="registered-list-box">
+            <h2>
+                <span>Confirmed Teams (Swipe →)</span>
+                <span id="team-count">0</span>
+            </h2>
+            <div id="registered-teams-list" class="teams-strip">
+                <p style="font-size: 0.76rem; color: var(--text-muted);">Loading entries...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- POP-UP MODAL FOR LOCKED REGISTRATION + ADMIN REPLIES -->
+    <div id="lock-popup" class="lock-modal-backdrop">
+        <div class="lock-modal-box">
+            <div class="lock-modal-top">
+                <h3 id="popup-heading">💬 Message Admin & View Replies</h3>
+                <button type="button" class="close-modal-btn" onclick="closeLockPopup()">&times;</button>
+            </div>
+            <p class="lock-modal-desc" id="popup-subtext">
+                Type your name/club below to load admin replies or send a new message.
+            </p>
+
+            <div class="replies-box">
+                <div class="replies-header">
+                    <span>Admin Replies & Thread</span>
+                    <button type="button" class="btn-refresh-replies" onclick="loadThreadMessages()">🔄 Refresh</button>
+                </div>
+                <div id="thread-messages-list" class="thread-feed">
+                    <div style="font-size:0.72rem; color:var(--text-muted); text-align:center;">Enter your name below to view replies.</div>
+                </div>
+            </div>
+
+            <form id="locked-msg-form" onsubmit="sendLockedMessageToAdmin(event)">
+                <div class="form-group">
+                    <label for="locked-sender-name">Your Name & Club *</label>
+                    <input type="text" id="locked-sender-name" placeholder="e.g. Coach Alex (Arsenal FC)" required maxlength="50" oninput="renderUserThread()">
+                </div>
+                <div class="form-group">
+                    <label for="locked-sender-text">Message to Admin *</label>
+                    <textarea id="locked-sender-text" rows="2" placeholder="e.g. Please add my team (Rating 83.2)!" required maxlength="250"></textarea>
+                </div>
+                <button type="submit" id="send-locked-msg-btn" class="btn-submit">📨 Send Message to Admin</button>
+            </form>
+            <div id="modal-feedback" class="modal-feedback"></div>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Tournament Hub</a>
+
+    <script>
+        const BIN_ID = "6afbe4a4ffd5d16053c77e7e";
+        const MASTER_KEY = "$2a$10$B85FPn9jz1K3QxcgtPbRdeNdinTlUJnKBqQg5Pj31ZE.G9D4.NzqO";
+
+        let isRegistrationLocked = false;
+        let maxTeamLimit = 0;
+        let hasShownLockPopupThisSession = false;
+        let allMessages = [];
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const savedUser = localStorage.getItem("dls_user_name") || "";
+            if (savedUser) {
+                document.getElementById("locked-sender-name").value = savedUser;
+            }
+            loadRegistrations();
+            loadThreadMessages();
+        });
+
+        function openLockPopup(lockedMode = isRegistrationLocked) {
+            const prefillTeam = document.getElementById("team-name").value.trim();
+            const prefillMgr = document.getElementById("manager-name").value.trim();
+            const senderInput = document.getElementById("locked-sender-name");
+            const heading = document.getElementById("popup-heading");
+            const subtext = document.getElementById("popup-subtext");
+
+            if (!senderInput.value.trim() && (prefillMgr || prefillTeam)) {
+                senderInput.value = prefillMgr && prefillTeam ? `${prefillMgr} (${prefillTeam})` : (prefillMgr || prefillTeam);
+            }
+
+            if (lockedMode) {
+                heading.textContent = "🔒 Register Locked — Message Admin";
+                heading.style.color = "#fca5a5";
+                subtext.textContent = "Registration limit is reached or locked. Send a message and check admin replies here.";
+            } else {
+                heading.textContent = "💬 Message Admin & View Replies";
+                heading.style.color = "var(--accent)";
+                subtext.textContent = "Send a note to the admin and view replies in your thread.";
+            }
+
+            document.getElementById("lock-popup").classList.add("active");
+            loadThreadMessages();
+        }
+
+        function closeLockPopup() {
+            document.getElementById("lock-popup").classList.remove("active");
+        }
+
+        function applyLockUI(currentCount) {
+            const badge = document.getElementById("reg-badge");
+            const banner = document.getElementById("locked-banner");
+            const submitBtn = document.getElementById("submit-btn");
+            const slotsEl = document.getElementById("slots-status");
+            const inputs = document.querySelectorAll("#reg-form input");
+
+            const limitReached = maxTeamLimit > 0 && currentCount >= maxTeamLimit;
+            const locked = Boolean(isRegistrationLocked || limitReached);
+
+            slotsEl.textContent = maxTeamLimit > 0 ? `${currentCount} / ${maxTeamLimit}` : `${currentCount} / Open`;
+            slotsEl.style.color = locked ? "var(--danger)" : "var(--accent)";
+
+            if (locked) {
+                badge.textContent = "🔒 LOCKED";
+                badge.classList.add("locked");
+                banner.classList.add("active");
+                submitBtn.disabled = true;
+                submitBtn.textContent = "🔒 Registration Locked";
+                inputs.forEach(inp => inp.disabled = true);
+
+                if (!hasShownLockPopupThisSession) {
+                    hasShownLockPopupThisSession = true;
+                    openLockPopup(true);
+                }
+            } else {
+                hasShownLockPopupThisSession = false;
+                badge.textContent = "REGISTRATION OPEN";
+                badge.classList.remove("locked");
+                banner.classList.remove("active");
+                submitBtn.disabled = false;
+                submitBtn.textContent = "⚽ Submit Registration";
+                inputs.forEach(inp => inp.disabled = false);
+                closeLockPopup();
+            }
+        }
+
+        async function loadRegistrations() {
+            const listEl = document.getElementById("registered-teams-list");
+            const countEl = document.getElementById("team-count");
+            try {
+                const res = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { "X-Master-Key": MASTER_KEY }
+                });
+                const data = await res.json();
+                const record = data.record || {};
+                const registrations = record.registrations || [];
+                allMessages = record.messages || [];
+                isRegistrationLocked = Boolean(record.registrationLocked);
+                maxTeamLimit = Number(record.registrationLimit) || 0;
+
+                countEl.textContent = registrations.length;
+                applyLockUI(registrations.length);
+                renderUserThread();
+
+                if (!registrations.length) {
+                    listEl.innerHTML = `<p style="font-size: 0.76rem; color: var(--text-muted);">No teams registered yet.</p>`;
+                    return;
+                }
+
+                listEl.innerHTML = registrations.map((r, idx) => {
+                    const ratingVal = Number(r.rating) || 80.0;
+                    return `
+                        <div class="team-chip">
+                            <div class="team-chip-top">
+                                <strong>${idx + 1}. ${escapeHtml(r.team)}</strong>
+                                <span class="rating-pill">⭐ ${ratingVal.toFixed(1)}</span>
+                            </div>
+                            <span class="coach-sub">Coach: ${escapeHtml(r.manager)}</span>
+                        </div>
+                    `;
+                }).join("");
+            } catch (err) {
+                listEl.innerHTML = `<p style="font-size: 0.76rem; color: var(--danger);">Could not load list.</p>`;
+            }
+        }
+
+        async function loadThreadMessages() {
+            try {
+                const res = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { "X-Master-Key": MASTER_KEY }
+                });
+                const data = await res.json();
+                allMessages = (data.record && data.record.messages) || [];
+                renderUserThread();
+            } catch (e) {}
+        }
+
+        function renderUserThread() {
+            const feed = document.getElementById("thread-messages-list");
+            const userName = (document.getElementById("locked-sender-name").value || "").trim().toLowerCase();
+
+            if (!userName) {
+                feed.innerHTML = `<div style="font-size:0.72rem; color:var(--text-muted); text-align:center;">Type your name/club below to see your messages and admin replies.</div>`;
+                return;
+            }
+
+            const matched = allMessages
+                .filter(m =>
+                    (m.sender && m.sender.toLowerCase() === userName) ||
+                    (m.sender === "Admin" && m.target && m.target.toLowerCase() === userName)
+                )
+                .slice()
+                .reverse();
+
+            if (!matched.length) {
+                feed.innerHTML = `<div style="font-size:0.72rem; color:var(--text-muted); text-align:center;">No messages yet for "${escapeHtml(userName)}". Send one below!</div>`;
+                return;
+            }
+
+            feed.innerHTML = matched.map(m => {
+                const isAdmin = m.sender === "Admin";
+                return `
+                    <div class="bubble-msg ${isAdmin ? "admin-reply" : "user-msg"}">
+                        <div>${escapeHtml(m.message)}</div>
+                        <span class="bubble-meta">${isAdmin ? "Admin Reply" : "You"} • ${escapeHtml(m.timestamp || "")}</span>
+                    </div>
+                `;
+            }).join("");
+            feed.scrollTop = feed.scrollHeight;
+        }
+
+        async function submitRegistration(e) {
+            e.preventDefault();
+            const btn = document.getElementById("submit-btn");
+            const statusEl = document.getElementById("status-msg");
+            const team = document.getElementById("team-name").value.trim();
+            const rating = parseFloat(document.getElementById("team-rating").value);
+            const manager = document.getElementById("manager-name").value.trim();
+            const contact = document.getElementById("contact-info").value.trim();
+
+            if (!team || !manager || isNaN(rating)) return;
+
+            btn.disabled = true;
+            btn.textContent = "Checking slots...";
+            statusEl.className = "status-msg";
+
+            try {
+                const getRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { "X-Master-Key": MASTER_KEY }
+                });
+                const getData = await getRes.json();
+                const record = getData.record || {};
+                const messages = record.messages || [];
+                const registrations = record.registrations || [];
+                const limit = Number(record.registrationLimit) || 0;
+                const locked = Boolean(record.registrationLocked);
+
+                if (locked || (limit > 0 && registrations.length >= limit)) {
+                    isRegistrationLocked = true;
+                    maxTeamLimit = limit;
+                    applyLockUI(registrations.length);
+                    openLockPopup(true);
+                    throw new Error("Registration is locked or full. Use the pop-up to message the admin.");
+                }
+
+                if (registrations.some(r => r.team.toLowerCase() === team.toLowerCase())) {
+                    throw new Error(`"${team}" is already registered!`);
+                }
+
+                registrations.push({
+                    team,
+                    rating: Number(rating.toFixed(1)),
+                    manager,
+                    contact,
+                    registeredAt: new Date().toLocaleString()
+                });
+
+                const nowLocked = Boolean(locked || (limit > 0 && registrations.length >= limit));
+
+                const putRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Master-Key": MASTER_KEY
+                    },
+                    body: JSON.stringify({
+                        messages,
+                        registrations,
+                        registrationLimit: limit,
+                        registrationLocked: nowLocked
+                    })
+                });
+
+                if (!putRes.ok) throw new Error("Server error while saving.");
+
+                const userTag = `${manager} (${team})`;
+                localStorage.setItem("dls_user_name", userTag);
+                document.getElementById("locked-sender-name").value = userTag;
+
+                statusEl.textContent = nowLocked
+                    ? `✅ ${team} registered! Limit reached — registration auto-locked.`
+                    : `✅ ${team} (${rating.toFixed(1)}) registered successfully!`;
+                statusEl.className = "status-msg success";
+                document.getElementById("reg-form").reset();
+                await loadRegistrations();
+            } catch (err) {
+                statusEl.textContent = `❌ ${err.message}`;
+                statusEl.className = "status-msg error";
+                loadRegistrations();
+            } finally {
+                if (!isRegistrationLocked) {
+                    btn.disabled = false;
+                    btn.textContent = "⚽ Submit Registration";
+                }
+            }
+        }
+
+        async function sendLockedMessageToAdmin(e) {
+            e.preventDefault();
+            const sender = document.getElementById("locked-sender-name").value.trim();
+            const text = document.getElementById("locked-sender-text").value.trim();
+            const sendBtn = document.getElementById("send-locked-msg-btn");
+            const feedback = document.getElementById("modal-feedback");
+
+            if (!sender || !text) return;
+
+            localStorage.setItem("dls_user_name", sender);
+            sendBtn.disabled = true;
+            sendBtn.textContent = "Sending...";
+            feedback.className = "modal-feedback";
+
+            try {
+                const getRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { "X-Master-Key": MASTER_KEY }
+                });
+                const getData = await getRes.json();
+                const rec = getData.record || {};
+                const messages = rec.messages || [];
+
+                const prefix = isRegistrationLocked ? "[LOCKED REGISTER REQUEST] " : "";
+                messages.unshift({
+                    sender,
+                    target: "Admin",
+                    message: `${prefix}${text}`,
+                    timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+                });
+
+                const putRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Master-Key": MASTER_KEY
+                    },
+                    body: JSON.stringify({
+                        messages,
+                        registrations: rec.registrations || [],
+                        registrationLimit: Number(rec.registrationLimit) || 0,
+                        registrationLocked: Boolean(rec.registrationLocked)
+                    })
+                });
+
+                if (!putRes.ok) throw new Error("Failed to send message.");
+
+                allMessages = messages;
+                document.getElementById("locked-sender-text").value = "";
+                feedback.textContent = "✅ Sent! Admin replies will appear in the thread above.";
+                feedback.className = "modal-feedback ok";
+                renderUserThread();
+            } catch (err) {
+                feedback.textContent = `❌ ${err.message}`;
+                feedback.className = "modal-feedback err";
+            } finally {
+                sendBtn.disabled = false;
+                sendBtn.textContent = "📨 Send Message to Admin";
+            }
+        }
+
+        function escapeHtml(str) {
+            return String(str ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+        }
+    </script>
+</body>
+</html>
