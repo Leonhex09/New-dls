@@ -1,18 +1,18 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "11/21/2026, 9:08:28 AM",
+  "lastUpdated": "Nov 21, 09:31 AM",
   "qualifyCount": 2,
   "groups": [
     {
-      "name": "Tier 1 (High Rated)",
+      "name": "Tier 1 Group A",
       "teams": [
         "AFRICHESTER FC",
         "Kitooro fc"
       ]
     },
     {
-      "name": "Tier 2 (Mid/Low Rated)",
+      "name": "Tier 2 Group A",
       "teams": [
         "Abrams fc",
         "Gunners"
@@ -32,5 +32,28 @@
     "Gunners": 54.5,
     "Abrams fc": 61.7,
     "Kitooro fc": 76.4
-  }
+  },
+  "knownTeamsPool": [
+    {
+      "team": "AFRICHESTER FC",
+      "manager": "Zlatan",
+      "rating": 84.5
+    },
+    {
+      "team": "Kitooro fc",
+      "manager": "Arez",
+      "rating": 76.4
+    },
+    {
+      "team": "Abrams fc",
+      "manager": "Amos abrams",
+      "rating": 61.7
+    },
+    {
+      "team": "Gunners",
+      "manager": "Starboy",
+      "rating": 54.5
+    }
+  ],
+  "tierMovementApplied": false
 }
