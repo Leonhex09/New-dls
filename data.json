@@ -1,102 +1,85 @@
 {
   "tournamentName": "DLS Champions League 2026",
-  "season": "SEASON 1• GROUP STAGE",
-  "lastUpdated": "Nov 21, 09:40 AM",
-  "qualifyCount": 2,
+  "season": "SEASON 1 • TIERED STAGE",
+  "lastUpdated": "Nov 21, 2026, 9:42 AM",
+  "qualifyCount": 0,
   "groups": [
     {
       "name": "Tier 1 Group A",
-      "teams": [
-        "AFRICHESTER FC",
-        "Kitooro fc"
-      ]
+      "teams": []
     },
     {
       "name": "Tier 2 Group A",
-      "teams": [
-        "Abrams fc",
-        "Gunners"
-      ]
+      "teams": []
     }
   ],
   "matches": [
     {
-      "id": 1795243170995,
-      "group": "Knockout",
-      "round": "Final",
-      "stageRound": "Final",
-      "roundOrder": 1,
-      "matchIndexInRound": 0,
-      "date": "Final",
-      "venue": "Stadium A",
-      "home": "AFRICHESTER FC",
-      "away": "Kitooro fc",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null
-    },
-    {
-      "id": 1795243224654,
+      "id": 0,
       "group": "Tier 1 Group A",
       "round": "Matchday 1",
       "date": "Matchday 1",
       "venue": "Stadium",
-      "home": "AFRICHESTER FC",
-      "away": "Kitooro fc",
-      "homeScore": null,
-      "awayScore": null,
+      "home": "TBD",
+      "away": "TBD",
+      "homeScore": 0,
+      "awayScore": 0,
       "status": "upcoming",
-      "stats": null
-    },
-    {
-      "id": 1795243224656,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "venue": "Stadium",
-      "home": "Abrams fc",
-      "away": "Gunners",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "onTarget": [
+          0,
+          0
+        ],
+        "tackles": [
+          0,
+          0
+        ],
+        "passes": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bookings": [
+          0,
+          0
+        ],
+        "offsides": [
+          0,
+          0
+        ],
+        "passCompletion": [
+          0,
+          0
+        ],
+        "shotAccuracy": [
+          0,
+          0
+        ],
+        "tackleSuccess": [
+          0,
+          0
+        ]
+      }
     }
   ],
-  "managers": {
-    "AFRICHESTER FC": "Zlatan",
-    "Gunners": "Starboy",
-    "Abrams fc": "Amos abrams",
-    "Kitooro fc": "Arez"
-  },
+  "managers": {},
+  "teamRatings": {},
+  "knownTeamsPool": [],
   "commentary": "",
-  "teamRatings": {
-    "AFRICHESTER FC": 84.5,
-    "Gunners": 54.5,
-    "Abrams fc": 61.7,
-    "Kitooro fc": 76.4
-  },
-  "knownTeamsPool": [
-    {
-      "team": "AFRICHESTER FC",
-      "manager": "Zlatan",
-      "rating": 84.5
-    },
-    {
-      "team": "Kitooro fc",
-      "manager": "Arez",
-      "rating": 76.4
-    },
-    {
-      "team": "Abrams fc",
-      "manager": "Amos abrams",
-      "rating": 61.7
-    },
-    {
-      "team": "Gunners",
-      "manager": "Starboy",
-      "rating": 54.5
-    }
-  ],
   "tierMovementApplied": false
 }
