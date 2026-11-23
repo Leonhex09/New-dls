@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 23, 10:43 PM",
+  "lastUpdated": "Nov 23, 10:45 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -26,8 +26,8 @@
     "AFRICHESTER FC": "Zlatan",
     "Chelsea": "Enzo",
     "A disturbed": "Owori joseph",
-    "STRAIGHT UNIT": "Manager TBD",
-    "Gunners": "Manager TBD",
+    "STRAIGHT UNIT": "The himist",
+    "Gunners": "Bk",
     "Bluemcclure": "Darward",
     "STARBOY FC": "Starboy"
   },
@@ -36,7 +36,7 @@
     "Chelsea": 78,
     "A disturbed": 56.5,
     "STRAIGHT UNIT": 91.4,
-    "Gunners": 61.4,
+    "Gunners": 92.4,
     "Bluemcclure": 80.6,
     "STARBOY FC": 82.5
   },
@@ -58,13 +58,13 @@
     },
     {
       "team": "STRAIGHT UNIT",
-      "manager": "Manager TBD",
+      "manager": "The himist",
       "rating": 91.4
     },
     {
       "team": "Gunners",
-      "manager": "Manager TBD",
-      "rating": 61.4
+      "manager": "Bk",
+      "rating": 92.4
     },
     {
       "team": "Bluemcclure",
