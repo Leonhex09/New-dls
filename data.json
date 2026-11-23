@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 23, 05:02 AM",
+  "lastUpdated": "Nov 23, 10:43 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -9,6 +9,7 @@
       "teams": [
         "STRAIGHT UNIT",
         "AFRICHESTER FC",
+        "STARBOY FC",
         "Bluemcclure"
       ]
     },
@@ -27,7 +28,8 @@
     "A disturbed": "Owori joseph",
     "STRAIGHT UNIT": "Manager TBD",
     "Gunners": "Manager TBD",
-    "Bluemcclure": "Darward"
+    "Bluemcclure": "Darward",
+    "STARBOY FC": "Starboy"
   },
   "teamRatings": {
     "AFRICHESTER FC": 84.5,
@@ -35,7 +37,8 @@
     "A disturbed": 56.5,
     "STRAIGHT UNIT": 91.4,
     "Gunners": 61.4,
-    "Bluemcclure": 80.6
+    "Bluemcclure": 80.6,
+    "STARBOY FC": 82.5
   },
   "knownTeamsPool": [
     {
@@ -67,6 +70,11 @@
       "team": "Bluemcclure",
       "manager": "Darward",
       "rating": 80.6
+    },
+    {
+      "team": "STARBOY FC",
+      "manager": "Starboy",
+      "rating": 82.5
     }
   ],
   "commentary": "Hey there wait for your next fixture ",
