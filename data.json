@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 24, 09:16 AM",
+  "lastUpdated": "Nov 24, 09:17 AM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -9,7 +9,8 @@
       "teams": [
         "UNCLE HIM",
         "STRAIGHT UNIT",
-        "AFRICHESTER FC"
+        "AFRICHESTER FC",
+        "FALCONS FC"
       ]
     },
     {
@@ -30,7 +31,8 @@
     "Gunners": "Bk",
     "Bluemcclure": "Darward",
     "STARBOY FC": "Starboy",
-    "UNCLE HIM": "HIM"
+    "UNCLE HIM": "HIM",
+    "FALCONS FC": "Manager TBD"
   },
   "teamRatings": {
     "AFRICHESTER FC": 84.5,
@@ -40,7 +42,8 @@
     "Gunners": 92.4,
     "Bluemcclure": 80.6,
     "STARBOY FC": 82.5,
-    "UNCLE HIM": 94.5
+    "UNCLE HIM": 94.5,
+    "FALCONS FC": 89.4
   },
   "knownTeamsPool": [
     {
@@ -82,6 +85,11 @@
       "team": "UNCLE HIM",
       "manager": "HIM",
       "rating": 94.5
+    },
+    {
+      "team": "FALCONS FC",
+      "manager": "Manager TBD",
+      "rating": 89.4
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
