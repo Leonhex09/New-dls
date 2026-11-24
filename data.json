@@ -1,21 +1,24 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 23, 10:47 PM",
+  "lastUpdated": "Nov 24, 09:12 AM",
   "qualifyCount": 0,
   "groups": [
     {
       "name": "Tier 1 Group A",
       "teams": [
+        "UNCLE HIM",
+        "Gunners",
         "STRAIGHT UNIT",
-        "AFRICHESTER FC",
-        "STARBOY FC",
-        "Bluemcclure"
+        "AFRICHESTER FC"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
+        "STARBOY FC",
+        "Bluemcclure",
+        "Chelsea",
         "A disturbed"
       ]
     }
@@ -28,7 +31,8 @@
     "STRAIGHT UNIT": "The himist",
     "Gunners": "Bk",
     "Bluemcclure": "Darward",
-    "STARBOY FC": "Starboy"
+    "STARBOY FC": "Starboy",
+    "UNCLE HIM": "HIM"
   },
   "teamRatings": {
     "AFRICHESTER FC": 84.5,
@@ -37,7 +41,8 @@
     "STRAIGHT UNIT": 91.4,
     "Gunners": 92.4,
     "Bluemcclure": 80.6,
-    "STARBOY FC": 82.5
+    "STARBOY FC": 82.5,
+    "UNCLE HIM": 94.5
   },
   "knownTeamsPool": [
     {
@@ -74,6 +79,11 @@
       "team": "STARBOY FC",
       "manager": "Starboy",
       "rating": 82.5
+    },
+    {
+      "team": "UNCLE HIM",
+      "manager": "HIM",
+      "rating": 94.5
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
