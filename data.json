@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 24, 12:14 PM",
+  "lastUpdated": "Nov 24, 12:15 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -9,14 +9,14 @@
       "teams": [
         "UNCLE HIM",
         "STRAIGHT UNIT",
-        "FALCONS FC",
-        "AC Milan"
+        "AFRICHESTER FC",
+        "FALCONS FC"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
-        "AFRICHESTER FC",
+        "AC Milan",
         "STARBOY FC",
         "Bluemcclure",
         "A disturbed"
@@ -25,31 +25,26 @@
   ],
   "matches": [],
   "managers": {
-    "AFRICHESTER FC": "Zlatan",
     "A disturbed": "Owori joseph",
     "STRAIGHT UNIT": "The himist",
     "Bluemcclure": "Darward",
     "STARBOY FC": "Starboy",
     "UNCLE HIM": "HIM",
     "FALCONS FC": "Sali",
-    "AC Milan": "Rocky"
+    "AC Milan": "Rocky",
+    "AFRICHESTER FC": "Zlatan"
   },
   "teamRatings": {
-    "AFRICHESTER FC": 84.5,
     "A disturbed": 56.5,
     "STRAIGHT UNIT": 91.4,
     "Bluemcclure": 80.6,
     "STARBOY FC": 82.5,
     "UNCLE HIM": 94.5,
     "FALCONS FC": 89.4,
-    "AC Milan": 85
+    "AC Milan": 85,
+    "AFRICHESTER FC": 90.1
   },
   "knownTeamsPool": [
-    {
-      "team": "AFRICHESTER FC",
-      "manager": "Zlatan",
-      "rating": 84.5
-    },
     {
       "team": "A disturbed",
       "manager": "Owori joseph",
@@ -84,6 +79,11 @@
       "team": "AC Milan",
       "manager": "Rocky",
       "rating": 85
+    },
+    {
+      "team": "AFRICHESTER FC",
+      "manager": "Zlatan",
+      "rating": 90.1
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
