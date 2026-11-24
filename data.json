@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 24, 09:18 AM",
+  "lastUpdated": "Nov 24, 09:23 AM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -9,8 +9,8 @@
       "teams": [
         "UNCLE HIM",
         "STRAIGHT UNIT",
-        "AFRICHESTER FC",
-        "FALCONS FC"
+        "FALCONS FC",
+        "AFRICHESTER FC"
       ]
     },
     {
@@ -25,10 +25,8 @@
   "matches": [],
   "managers": {
     "AFRICHESTER FC": "Zlatan",
-    "Chelsea": "Enzo",
     "A disturbed": "Owori joseph",
     "STRAIGHT UNIT": "The himist",
-    "Gunners": "Bk",
     "Bluemcclure": "Darward",
     "STARBOY FC": "Starboy",
     "UNCLE HIM": "HIM",
@@ -36,10 +34,8 @@
   },
   "teamRatings": {
     "AFRICHESTER FC": 84.5,
-    "Chelsea": 78,
     "A disturbed": 56.5,
     "STRAIGHT UNIT": 91.4,
-    "Gunners": 92.4,
     "Bluemcclure": 80.6,
     "STARBOY FC": 82.5,
     "UNCLE HIM": 94.5,
@@ -52,11 +48,6 @@
       "rating": 84.5
     },
     {
-      "team": "Chelsea",
-      "manager": "Enzo",
-      "rating": 78
-    },
-    {
       "team": "A disturbed",
       "manager": "Owori joseph",
       "rating": 56.5
@@ -65,11 +56,6 @@
       "team": "STRAIGHT UNIT",
       "manager": "The himist",
       "rating": 91.4
-    },
-    {
-      "team": "Gunners",
-      "manager": "Bk",
-      "rating": 92.4
     },
     {
       "team": "Bluemcclure",
@@ -93,5 +79,19 @@
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
-  "tierMovementApplied": false
+  "tierMovementApplied": false,
+  "removedTeamsArchive": [
+    {
+      "team": "Chelsea",
+      "manager": "Enzo",
+      "rating": 78,
+      "removedAt": "Nov 24"
+    },
+    {
+      "team": "Gunners",
+      "manager": "Bk",
+      "rating": 92.4,
+      "removedAt": "Nov 24"
+    }
+  ]
 }
