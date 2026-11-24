@@ -10,15 +10,16 @@
         "UNCLE HIM",
         "STRAIGHT UNIT",
         "AFRICHESTER FC",
-        "FALCONS FC"
+        "FALCONS FC",
+        "AC Milan"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
-        "AC Milan",
         "STARBOY FC",
         "Bluemcclure",
+        "KR FC",
         "A disturbed"
       ]
     }
@@ -32,7 +33,8 @@
     "UNCLE HIM": "HIM",
     "FALCONS FC": "Sali",
     "AC Milan": "Rocky",
-    "AFRICHESTER FC": "Zlatan"
+    "AFRICHESTER FC": "Zlatan",
+    "KR FC": "Kato Ramathan"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -42,7 +44,8 @@
     "UNCLE HIM": 94.5,
     "FALCONS FC": 89.4,
     "AC Milan": 85,
-    "AFRICHESTER FC": 90.1
+    "AFRICHESTER FC": 90.1,
+    "KR FC": 71.6
   },
   "knownTeamsPool": [
     {
@@ -84,6 +87,11 @@
       "team": "AFRICHESTER FC",
       "manager": "Zlatan",
       "rating": 90.1
+    },
+    {
+      "team": "KR FC",
+      "manager": "Kato Ramathan",
+      "rating": 71.6
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
