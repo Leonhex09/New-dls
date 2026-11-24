@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 24, 03:18 PM",
+  "lastUpdated": "Nov 24, 03:21 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -24,90 +24,6 @@
     }
   ],
   "matches": [
-    {
-      "id": 1795521779659,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "venue": "Stadium",
-      "home": "UNCLE HIM",
-      "away": "FALCONS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795521779670,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "venue": "Stadium",
-      "home": "STRAIGHT UNIT",
-      "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795521779673,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 2",
-      "date": "Matchday 2",
-      "venue": "Stadium",
-      "home": "UNCLE HIM",
-      "away": "AFRICHESTER FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795521779674,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 2",
-      "date": "Matchday 2",
-      "venue": "Stadium",
-      "home": "FALCONS FC",
-      "away": "STRAIGHT UNIT",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795521779675,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 3",
-      "date": "Matchday 3",
-      "venue": "Stadium",
-      "home": "UNCLE HIM",
-      "away": "STRAIGHT UNIT",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795521779676,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 3",
-      "date": "Matchday 3",
-      "venue": "Stadium",
-      "home": "AFRICHESTER FC",
-      "away": "FALCONS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
     {
       "id": 1795521779679,
       "group": "Tier 2 Group A",
