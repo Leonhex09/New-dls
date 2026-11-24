@@ -1,14 +1,13 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 24, 09:12 AM",
+  "lastUpdated": "Nov 24, 09:14 AM",
   "qualifyCount": 0,
   "groups": [
     {
       "name": "Tier 1 Group A",
       "teams": [
         "UNCLE HIM",
-        "Gunners",
         "STRAIGHT UNIT",
         "AFRICHESTER FC"
       ]
@@ -18,7 +17,6 @@
       "teams": [
         "STARBOY FC",
         "Bluemcclure",
-        "Chelsea",
         "A disturbed"
       ]
     }
