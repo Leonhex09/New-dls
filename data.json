@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 24, 09:17 AM",
+  "lastUpdated": "Nov 24, 09:18 AM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -32,7 +32,7 @@
     "Bluemcclure": "Darward",
     "STARBOY FC": "Starboy",
     "UNCLE HIM": "HIM",
-    "FALCONS FC": "Manager TBD"
+    "FALCONS FC": "Sali"
   },
   "teamRatings": {
     "AFRICHESTER FC": 84.5,
@@ -88,7 +88,7 @@
     },
     {
       "team": "FALCONS FC",
-      "manager": "Manager TBD",
+      "manager": "Sali",
       "rating": 89.4
     }
   ],
