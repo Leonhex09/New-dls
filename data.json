@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 08:06 PM",
+  "lastUpdated": "Nov 27, 08:11 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -23,6 +23,7 @@
       "name": "Tier 2 Group A",
       "teams": [
         "AC Milan",
+        "Baggie",
         "STARBOY FC",
         "Bluemcclure",
         "THE TIKITAKA MAESTRO",
@@ -1189,7 +1190,8 @@
     "Diamond fox fc": "Ryan",
     "TEAM VIEWER": "cj banks",
     "CHARLY FC": "Coach hasgad",
-    "TAXZY FC": "KILI"
+    "TAXZY FC": "KILI",
+    "Baggie": "The Saint"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -1210,7 +1212,8 @@
     "Diamond fox fc": 93.7,
     "TEAM VIEWER": 88,
     "CHARLY FC": 55.6,
-    "TAXZY FC": 70.3
+    "TAXZY FC": 70.3,
+    "Baggie": 84.5
   },
   "knownTeamsPool": [
     {
@@ -1307,6 +1310,11 @@
       "team": "TAXZY FC",
       "manager": "KILI",
       "rating": 70.3
+    },
+    {
+      "team": "Baggie",
+      "manager": "The Saint",
+      "rating": 84.5
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
