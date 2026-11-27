@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 08:32 PM",
+  "lastUpdated": "Nov 27, 09:07 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -16,23 +16,24 @@
         "Titan city",
         "FALCONS FC",
         "TEAM VIEWER",
-        "Massey"
+        "Massey",
+        "AC Milan"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
-        "AC Milan",
         "Baggie",
         "STARBOY FC",
         "Bluemcclure",
+        "AFRICHESTER 2",
+        "Gulwe fc",
         "THE TIKITAKA MAESTRO",
         "KR FC",
         "TAXZY FC",
         "Ivy",
         "A disturbed",
-        "CHARLY FC",
-        "Gulwe fc"
+        "CHARLY FC"
       ]
     }
   ],
@@ -1459,7 +1460,8 @@
     "CHARLY FC": "Coach hasgad",
     "TAXZY FC": "KILI",
     "Baggie": "The Saint",
-    "Gulwe fc": "Manager TBD"
+    "Gulwe fc": "Manager TBD",
+    "AFRICHESTER 2": "Manager TBD"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -1482,7 +1484,8 @@
     "CHARLY FC": 55.6,
     "TAXZY FC": 70.3,
     "Baggie": 84.5,
-    "Gulwe fc": 78.4
+    "Gulwe fc": 78.4,
+    "AFRICHESTER 2": 80.2
   },
   "knownTeamsPool": [
     {
@@ -1589,9 +1592,21 @@
       "team": "Gulwe fc",
       "manager": "Manager TBD",
       "rating": 78.4
+    },
+    {
+      "team": "AFRICHESTER 2",
+      "manager": "Manager TBD",
+      "rating": 80.2
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
   "tierMovementApplied": false,
-  "removedTeamsArchive": []
+  "removedTeamsArchive": [
+    {
+      "team": "CHARLY",
+      "manager": "Coach Hasgad",
+      "rating": 95.6,
+      "removedAt": "Nov 27"
+    }
+  ]
 }
