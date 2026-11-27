@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 12:43 AM",
+  "lastUpdated": "Nov 28, 12:44 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -52,7 +52,9 @@
       "awayScore": null,
       "status": "upcoming",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": null,
+      "approvedAt": null
     },
     {
       "id": 1795815250034,
@@ -66,7 +68,9 @@
       "awayScore": null,
       "status": "upcoming",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": null,
+      "approvedAt": null
     },
     {
       "id": 1795815250035,
@@ -80,7 +84,9 @@
       "awayScore": null,
       "status": "upcoming",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": null,
+      "approvedAt": null
     },
     {
       "id": 1795815250036,
@@ -94,7 +100,9 @@
       "awayScore": null,
       "status": "upcoming",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": null,
+      "approvedAt": null
     },
     {
       "id": 1795815250037,
@@ -108,7 +116,9 @@
       "awayScore": null,
       "status": "upcoming",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": null,
+      "approvedAt": null
     },
     {
       "id": 1795815250038,
@@ -122,7 +132,9 @@
       "awayScore": null,
       "status": "upcoming",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": null,
+      "approvedAt": null
     },
     {
       "id": 1795815250039,
@@ -2080,6 +2092,6 @@
   "guideEnabled": true,
   "lastFixtureSignature": "",
   "activeMatchday": "Matchday 1",
-  "matchdayAnchorTime": "2026-11-27T21:42:00.000Z",
+  "matchdayAnchorTime": "2026-11-27T21:44:38.249Z",
   "matchdayAutoMode": true
 }
