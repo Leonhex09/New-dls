@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 08:11 PM",
+  "lastUpdated": "Nov 27, 08:28 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -31,7 +31,8 @@
         "TAXZY FC",
         "Ivy",
         "A disturbed",
-        "CHARLY FC"
+        "CHARLY FC",
+        "Gulwe fc"
       ]
     }
   ],
@@ -1317,7 +1318,8 @@
     "TEAM VIEWER": "cj banks",
     "CHARLY FC": "Coach hasgad",
     "TAXZY FC": "KILI",
-    "Baggie": "The Saint"
+    "Baggie": "The Saint",
+    "Gulwe fc": "Manager TBD"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -1339,7 +1341,8 @@
     "TEAM VIEWER": 88,
     "CHARLY FC": 55.6,
     "TAXZY FC": 70.3,
-    "Baggie": 84.5
+    "Baggie": 84.5,
+    "Gulwe fc": 80
   },
   "knownTeamsPool": [
     {
@@ -1441,6 +1444,11 @@
       "team": "Baggie",
       "manager": "The Saint",
       "rating": 84.5
+    },
+    {
+      "team": "Gulwe fc",
+      "manager": "Manager TBD",
+      "rating": 80
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
