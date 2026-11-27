@@ -2099,5 +2099,5 @@
   "clockFormat": "24h",
   "rolloverHour": 0,
   "pinnedMatchday": "",
-  "lockUserMatchdaySelection": false
+  "lockUserMatchdaySelection": true
 }
