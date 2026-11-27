@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DLS Player Result Updater</title>
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --bg-card: #131a2a;
+            --bg-input: #0d1320;
+            --accent: #00e676;
+            --accent-hover: #00c865;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #232d42;
+            --danger: #ef4444;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background: var(--bg-dark); color: var(--text-main); padding: 14px; }
+        .wrap { max-width: 480px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+        h1 { font-size: 1rem; color: var(--accent); margin-bottom: 4px; }
+        .sub { font-size: 0.74rem; color: var(--text-muted); margin-bottom: 14px; }
+        .form-group { margin-bottom: 10px; display: flex; flex-direction: column; gap: 4px; }
+        label { font-size: 0.72rem; color: var(--text-muted); font-weight: 700; }
+        input, select { background: var(--bg-input); color: var(--text-main); border: 1px solid var(--border); padding: 9px; border-radius: 7px; font-size: 0.84rem; width: 100%; outline: none; }
+        input:focus, select:focus { border-color: var(--accent); }
+        input:read-only { opacity: 0.8; background: #090e18; }
+        .coach-row { display: flex; gap: 6px; align-items: center; }
+        .btn-mini { padding: 9px 11px; border: 1px solid var(--border); border-radius: 7px; background: #1e293b; color: var(--text-main); font-size: 0.74rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
+        .btn-mini:hover { border-color: var(--accent); color: var(--accent); }
+        .hint { font-size: 0.68rem; color: var(--text-muted); }
+        .score-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; margin: 10px 0; }
+        .score-box { text-align: center; }
+        .score-box span { display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 4px; color: var(--text-main); }
+        .score-box input { text-align: center; font-size: 1.1rem; font-weight: 800; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .btn { width: 100%; padding: 10px; border: none; border-radius: 8px; font-weight: 800; font-size: 0.84rem; cursor: pointer; background: var(--accent); color: #050a14; margin-top: 6px; }
+        .btn:hover { background: var(--accent-hover); }
+        .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+        .msg { margin-top: 10px; font-size: 0.76rem; padding: 8px 10px; border-radius: 7px; display: none; }
+        .msg.ok { display: block; background: rgba(0, 230, 118, 0.14); color: var(--accent); border: 1px solid var(--accent); }
+        .msg.err { display: block; background: rgba(239, 68, 68, 0.14); color: #fca5a5; border: 1px solid var(--danger); }
+
+        /* Message Dialog Modal */
+        .dialog-backdrop {
+            position: fixed; inset: 0; background: rgba(5, 10, 20, 0.82);
+            display: none; align-items: center; justify-content: center; padding: 16px; z-index: 999;
+        }
+        .dialog-backdrop.open { display: flex; }
+        .dialog-box {
+            width: 100%; max-width: 380px; background: var(--bg-card); border: 1px solid var(--accent);
+            border-radius: 12px; padding: 18px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
+        }
+        .dialog-title { font-size: 0.95rem; font-weight: 800; color: var(--accent); margin-bottom: 8px; }
+        .dialog-body { font-size: 0.8rem; color: var(--text-main); line-height: 1.45; margin-bottom: 14px; }
+        .dialog-btn { width: 100%; padding: 9px; border: none; border-radius: 8px; background: var(--accent); color: #050a14; font-weight: 800; font-size: 0.82rem; cursor: pointer; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>⚽ Submit Match Result</h1>
+    <p class="sub">Only your fixtures appear. Each fixture can only be updated once per day.</p>
+
+    <div class="form-group">
+        <label>Your Saved Coach Name</label>
+        <div class="coach-row">
+            <input type="text" id="player-coach" placeholder="Type your name & press Enter" oninput="handleCoachInput()" onkeydown="handleCoachKey(event)">
+            <button type="button" class="btn-mini" id="edit-coach-btn" onclick="focusCoachEdit()" style="display:none;">Change</button>
+        </div>
+        <span class="hint" id="coach-hint">Saved automatically on this device.</span>
+    </div>
+
+    <div class="form-group">
+        <label>Select Your Fixture</label>
+        <select id="fixture-select" onchange="onFixtureChange()">
+            <option value="">Enter your coach name first...</option>
+        </select>
+    </div>
+
+    <div class="score-row">
+        <div class="score-box">
+            <span id="lbl-home">Home</span>
+            <input type="number" id="home-score" min="0" max="99" placeholder="0">
+        </div>
+        <div style="font-weight: 800; color: var(--text-muted); padding-top: 14px;">VS</div>
+        <div class="score-box">
+            <span id="lbl-away">Away</span>
+            <input type="number" id="away-score" min="0" max="99" placeholder="0">
+        </div>
+    </div>
+
+    <div class="grid-2">
+        <div class="form-group">
+            <label>Possession % (Home / Away)</label>
+            <div class="grid-2">
+                <input type="number" id="poss-home" min="0" max="100" placeholder="H">
+                <input type="number" id="poss-away" min="0" max="100" placeholder="A">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Shots (Home / Away)</label>
+            <div class="grid-2">
+                <input type="number" id="shots-home" min="0" max="99" placeholder="H">
+                <input type="number" id="shots-away" min="0" max="99" placeholder="A">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Player of the Match (Optional)</label>
+        <input type="text" id="potm-player" placeholder="e.g. Haaland">
+    </div>
+
+    <button class="btn" id="submit-btn" onclick="submitResult()">📤 Send for Admin Approval</button>
+    <div id="status-msg" class="msg"></div>
+</div>
+
+<!-- Confirmation / Notice Dialog -->
+<div class="dialog-backdrop" id="info-dialog">
+    <div class="dialog-box">
+        <div class="dialog-title" id="dialog-title">Notice</div>
+        <div class="dialog-body" id="dialog-body"></div>
+        <button type="button" class="dialog-btn" onclick="closeDialog()">OK</button>
+    </div>
+</div>
+
+<script>
+    const GH_RAW_URL = "https://raw.githubusercontent.com/Leonhex09/New-dls/main/data.json";
+    const BIN_ID = "6afbe4a4ffd5d16053c77e7e";
+    const MASTER_KEY = "$2a$10$B85FPn9jz1K3QxcgtPbRdeNdinTlUJnKBqQg5Pj31ZE.G9D4.NzqO";
+
+    const COACH_STORAGE_KEY = "dls_saved_coach_name";
+    const DAILY_LOG_STORAGE_KEY = "dls_daily_fixture_submissions";
+
+    let allMatchesCache = [];
+    let managersMapCache = {};
+    let binSubmittedCache = [];
+    let visibleFixtures = [];
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        const savedName = (localStorage.getItem(COACH_STORAGE_KEY) || "").trim();
+        const coachInput = document.getElementById("player-coach");
+        if (savedName) {
+            coachInput.value = savedName;
+            lockCoachInput(true);
+        }
+        await loadTournamentAndBinData();
+        filterFixturesForCoach();
+    });
+
+    function getTodayKey() {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, "0");
+        const d = String(now.getDate()).padStart(2, "0");
+        return `${y}-${m}-${d}`;
+    }
+
+    function getMatchKey(m) {
+        if (!m) return "";
+        if (m.id !== undefined && m.id !== null) return `id_${m.id}`;
+        return `${String(m.group || "").toLowerCase()}_${String(m.home || "").toLowerCase()}_${String(m.away || "").toLowerCase()}_${String(m.round || "").toLowerCase()}`;
+    }
+
+    function lockCoachInput(locked) {
+        const input = document.getElementById("player-coach");
+        const editBtn = document.getElementById("edit-coach-btn");
+        const hint = document.getElementById("coach-hint");
+        input.readOnly = locked;
+        editBtn.style.display = locked ? "inline-block" : "none";
+        hint.textContent = locked
+            ? "Name permanently saved on this device. Tap Change to edit."
+            : "Type your name to save permanently and show only your fixtures.";
+    }
+
+    function focusCoachEdit() {
+        lockCoachInput(false);
+        const input = document.getElementById("player-coach");
+        input.focus();
+        input.select();
+    }
+
+    function handleCoachKey(e) {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            const val = document.getElementById("player-coach").value.trim();
+            if (val) {
+                localStorage.setItem(COACH_STORAGE_KEY, val);
+                lockCoachInput(true);
+                filterFixturesForCoach();
+            }
+        }
+    }
+
+    function handleCoachInput() {
+        const input = document.getElementById("player-coach");
+        if (input.readOnly) return;
+        const val = input.value.trim();
+        if (val) {
+            localStorage.setItem(COACH_STORAGE_KEY, val);
+        } else {
+            localStorage.removeItem(COACH_STORAGE_KEY);
+        }
+        filterFixturesForCoach();
+    }
+
+    function openDialog(title, body) {
+        document.getElementById("dialog-title").textContent = title;
+        document.getElementById("dialog-body").textContent = body;
+        document.getElementById("info-dialog").classList.add("open");
+    }
+
+    function closeDialog() {
+        document.getElementById("info-dialog").classList.remove("open");
+    }
+
+    async function loadTournamentAndBinData() {
+        const sel = document.getElementById("fixture-select");
+        try {
+            const [ghRes, binRes] = await Promise.all([
+                fetch(`${GH_RAW_URL}?t=${Date.now()}`),
+                fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { "X-Master-Key": MASTER_KEY }
+                })
+            ]);
+
+            const ghData = await ghRes.json();
+            const binData = await binRes.json();
+
+            managersMapCache = ghData.managers || {};
+            binSubmittedCache = (binData.record && binData.record.submittedResults) || [];
+
+            allMatchesCache = (ghData.matches || []).filter(m =>
+                m.home && m.away &&
+                !String(m.home).startsWith("Winner ") &&
+                !String(m.away).startsWith("Winner ") &&
+                m.home !== "TBD" && m.away !== "TBD"
+            );
+        } catch (err) {
+            sel.innerHTML = `<option value="">Failed to load fixtures</option>`;
+        }
+    }
+
+    function getTeamManagerName(teamName) {
+        const raw = managersMapCache[teamName];
+        if (!raw) return "";
+        if (typeof raw === "string") return raw.trim();
+        if (typeof raw === "object" && raw.name) return String(raw.name).trim();
+        return "";
+    }
+
+    function isCoachAssignedToTeam(teamName, coachQuery) {
+        const q = coachQuery.trim().toLowerCase();
+        if (!q) return false;
+        const mgr = getTeamManagerName(teamName).toLowerCase();
+        if (!mgr || mgr === "manager tbd") return false;
+        return mgr === q || mgr.includes(q) || q.includes(mgr);
+    }
+
+    function hasSubmittedToday(match) {
+        const today = getTodayKey();
+        const matchKey = getMatchKey(match);
+
+        // 1. Check local device daily log
+        const localLog = JSON.parse(localStorage.getItem(DAILY_LOG_STORAGE_KEY) || "{}");
+        if (localLog[today] && localLog[today].includes(matchKey)) {
+            return true;
+        }
+
+        // 2. Check JSONBin pending submissions for today
+        return binSubmittedCache.some(item => {
+            if (item.submittedDateKey !== today) return false;
+            if (item.matchId !== null && item.matchId !== undefined && match.id !== undefined) {
+                return String(item.matchId) === String(match.id);
+            }
+            return (
+                String(item.home || "").toLowerCase() === String(match.home || "").toLowerCase() &&
+                String(item.away || "").toLowerCase() === String(match.away || "").toLowerCase() &&
+                String(item.round || "").toLowerCase() === String(match.round || "").toLowerCase()
+            );
+        });
+    }
+
+    function recordSubmittedToday(match) {
+        const today = getTodayKey();
+        const matchKey = getMatchKey(match);
+        const localLog = JSON.parse(localStorage.getItem(DAILY_LOG_STORAGE_KEY) || "{}");
+        if (!Array.isArray(localLog[today])) localLog[today] = [];
+        if (!localLog[today].includes(matchKey)) {
+            localLog[today].push(matchKey);
+        }
+        localStorage.setItem(DAILY_LOG_STORAGE_KEY, JSON.stringify(localLog));
+    }
+
+    function filterFixturesForCoach() {
+        const coach = document.getElementById("player-coach").value.trim();
+        const sel = document.getElementById("fixture-select");
+        const submitBtn = document.getElementById("submit-btn");
+
+        if (!coach) {
+            visibleFixtures = [];
+            sel.innerHTML = `<option value="">Enter your coach name first...</option>`;
+            document.getElementById("lbl-home").textContent = "Home";
+            document.getElementById("lbl-away").textContent = "Away";
+            submitBtn.disabled = true;
+            return;
+        }
+
+        visibleFixtures = allMatchesCache.filter(m =>
+            isCoachAssignedToTeam(m.home, coach) || isCoachAssignedToTeam(m.away, coach)
+        );
+
+        if (!visibleFixtures.length) {
+            sel.innerHTML = `<option value="">No fixtures found for "${escapeHtml(coach)}"</option>`;
+            document.getElementById("lbl-home").textContent = "Home";
+            document.getElementById("lbl-away").textContent = "Away";
+            submitBtn.disabled = true;
+            return;
+        }
+
+        sel.innerHTML = `<option value="">-- Choose your fixture --</option>` + visibleFixtures.map((m, i) => {
+            const alreadyToday = hasSubmittedToday(m);
+            const tag = alreadyToday ? " [Updated Today]" : "";
+            const scoreInfo = m.status === "played" ? ` (${m.homeScore}-${m.awayScore})` : "";
+            return `<option value="${i}">[${m.group || "Match"} • ${m.round || ""}] ${escapeHtml(m.home)} vs ${escapeHtml(m.away)}${scoreInfo}${tag}</option>`;
+        }).join("");
+
+        onFixtureChange();
+    }
+
+    function onFixtureChange() {
+        const idx = document.getElementById("fixture-select").value;
+        const m = visibleFixtures[idx];
+        const submitBtn = document.getElementById("submit-btn");
+
+        if (!m) {
+            document.getElementById("lbl-home").textContent = "Home";
+            document.getElementById("lbl-away").textContent = "Away";
+            submitBtn.disabled = visibleFixtures.length === 0;
+            return;
+        }
+
+        document.getElementById("lbl-home").textContent = m.home;
+        document.getElementById("lbl-away").textContent = m.away;
+
+        if (hasSubmittedToday(m)) {
+            submitBtn.disabled = true;
+            openDialog(
+                "Daily Limit Reached",
+                `You can only update each result of a played fixture once a day. "${m.home} vs ${m.away}" has already been submitted today. The admin will approve this within 10 minutes.`
+            );
+        } else {
+            submitBtn.disabled = false;
+        }
+    }
+
+    function showStatus(text, ok) {
+        const el = document.getElementById("status-msg");
+        el.textContent = text;
+        el.className = `msg ${ok ? "ok" : "err"}`;
+    }
+
+    function escapeHtml(str) {
+        return String(str ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    async function submitResult() {
+        const coachInput = document.getElementById("player-coach");
+        const coach = coachInput.value.trim();
+        const idx = document.getElementById("fixture-select").value;
+        const hsRaw = document.getElementById("home-score").value;
+        const asRaw = document.getElementById("away-score").value;
+
+        if (!coach) {
+            showStatus("Please enter your coach name.", false);
+            return;
+        }
+        localStorage.setItem(COACH_STORAGE_KEY, coach);
+        lockCoachInput(true);
+
+        if (idx === "" || hsRaw === "" || asRaw === "") {
+            showStatus("Please select your fixture and enter both scores.", false);
+            return;
+        }
+
+        const m = visibleFixtures[idx];
+        if (!m) return;
+
+        // Refresh JSONBin before writing so cross-device daily checks are accurate
+        try {
+            const latestRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                headers: { "X-Master-Key": MASTER_KEY }
+            });
+            const latestData = await latestRes.json();
+            binSubmittedCache = (latestData.record && latestData.record.submittedResults) || [];
+        } catch (e) {}
+
+        if (hasSubmittedToday(m)) {
+            filterFixturesForCoach();
+            openDialog(
+                "Once Per Day Limit",
+                `You can only update each result of a played fixture once a day. This fixture was already updated today, and the admin will approve this within 10 minutes.`
+            );
+            return;
+        }
+
+        const stats = {};
+        const ph = document.getElementById("poss-home").value;
+        const pa = document.getElementById("poss-away").value;
+        if (ph !== "" && pa !== "") stats.possession = [Number(ph), Number(pa)];
+
+        const sh = document.getElementById("shots-home").value;
+        const sa = document.getElementById("shots-away").value;
+        if (sh !== "" && sa !== "") stats.shots = [Number(sh), Number(sa)];
+
+        const potmName = document.getElementById("potm-player").value.trim();
+        const todayKey = getTodayKey();
+
+        const submission = {
+            id: "sub_" + Date.now() + "_" + Math.random().toString(36).slice(2, 6),
+            submittedBy: coach,
+            submittedDateKey: todayKey,
+            submittedAt: new Date().toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }),
+            matchId: m.id ?? null,
+            group: m.group || "",
+            round: m.round || "",
+            home: m.home,
+            away: m.away,
+            homeScore: Number(hsRaw),
+            awayScore: Number(asRaw),
+            stats: Object.keys(stats).length ? stats : null,
+            playerOfTheMatch: potmName ? { player: potmName, rating: "", goals: 0, assists: 0 } : null
+        };
+
+        const btn = document.getElementById("submit-btn");
+        btn.disabled = true;
+        btn.textContent = "Sending...";
+
+        try {
+            const getRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                headers: { "X-Master-Key": MASTER_KEY }
+            });
+            const getData = await getRes.json();
+            const rec = getData.record || {};
+            const currentSubmitted = rec.submittedResults || [];
+
+            const duplicateToday = currentSubmitted.some(item =>
+                item.submittedDateKey === todayKey &&
+                (
+                    (item.matchId !== null && item.matchId !== undefined && m.id !== undefined && String(item.matchId) === String(m.id)) ||
+                    (
+                        String(item.home || "").toLowerCase() === String(m.home || "").toLowerCase() &&
+                        String(item.away || "").toLowerCase() === String(m.away || "").toLowerCase() &&
+                        String(item.round || "").toLowerCase() === String(m.round || "").toLowerCase()
+                    )
+                )
+            );
+
+            if (duplicateToday) {
+                binSubmittedCache = currentSubmitted;
+                recordSubmittedToday(m);
+                filterFixturesForCoach();
+                openDialog(
+                    "Once Per Day Limit",
+                    `You can only update each result of a played fixture once a day. The admin will approve this within 10 minutes.`
+                );
+                return;
+            }
+
+            const nextSubmitted = [submission, ...currentSubmitted];
+
+            const putRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json", "X-Master-Key": MASTER_KEY },
+                body: JSON.stringify({
+                    messages: rec.messages || [],
+                    registrations: rec.registrations || [],
+                    registrationLimit: Number(rec.registrationLimit) || 0,
+                    registrationLocked: Boolean(rec.registrationLocked),
+                    submittedResults: nextSubmitted
+                })
+            });
+
+            if (!putRes.ok) throw new Error("JSONBin write failed");
+
+            binSubmittedCache = nextSubmitted;
+            recordSubmittedToday(m);
+
+            document.getElementById("home-score").value = "";
+            document.getElementById("away-score").value = "";
+            document.getElementById("potm-player").value = "";
+
+            filterFixturesForCoach();
+            showStatus("✅ Result submitted for today.", true);
+            openDialog(
+                "Result Submitted",
+                `Your result for ${m.home} vs ${m.away} has been sent. Remember you can only update each result of a played fixture once a day, and the admin will approve this within 10 minutes.`
+            );
+        } catch (err) {
+            showStatus("❌ Could not send result. Check connection.", false);
+        } finally {
+            btn.disabled = visibleFixtures.length === 0 || (m && hasSubmittedToday(m));
+            btn.textContent = "📤 Send for Admin Approval";
+        }
+    }
+</script>
+</body>
+</html>
