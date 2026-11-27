@@ -1,12 +1,13 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 05:39 PM",
+  "lastUpdated": "Nov 27, 06:01 PM",
   "qualifyCount": 0,
   "groups": [
     {
       "name": "Tier 1 Group A",
       "teams": [
+        "Disciplinary committee",
         "UNCLE HIM",
         "STRAIGHT UNIT",
         "Paris CF",
@@ -44,7 +45,8 @@
     "Titan city": "Ethan",
     "THE TIKITAKA MAESTRO": "EBZ",
     "Ivy": "Amorim",
-    "Massey": "Furgerson"
+    "Massey": "Furgerson",
+    "Disciplinary committee": "Micheal carrick"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -60,7 +62,8 @@
     "Titan city": 89.6,
     "THE TIKITAKA MAESTRO": 73,
     "Ivy": 70,
-    "Massey": 85.4
+    "Massey": 85.4,
+    "Disciplinary committee": 94.7
   },
   "knownTeamsPool": [
     {
@@ -132,6 +135,11 @@
       "team": "Massey",
       "manager": "Furgerson",
       "rating": 85.4
+    },
+    {
+      "team": "Disciplinary committee",
+      "manager": "Micheal carrick",
+      "rating": 94.7
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
