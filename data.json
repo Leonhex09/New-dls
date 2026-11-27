@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 08:31 PM",
+  "lastUpdated": "Nov 27, 08:32 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -1593,12 +1593,5 @@
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
   "tierMovementApplied": false,
-  "removedTeamsArchive": [
-    {
-      "team": "CHARLY",
-      "manager": "Coach Hasgad",
-      "rating": 95.6,
-      "removedAt": "Nov 27"
-    }
-  ]
+  "removedTeamsArchive": []
 }
