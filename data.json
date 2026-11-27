@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 04:54 PM",
+  "lastUpdated": "Nov 27, 05:26 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -11,6 +11,7 @@
         "STRAIGHT UNIT",
         "Paris CF",
         "AFRICHESTER FC",
+        "Titan city",
         "FALCONS FC"
       ]
     },
@@ -20,6 +21,7 @@
         "AC Milan",
         "STARBOY FC",
         "Bluemcclure",
+        "THE TIKITAKA MAESTRO",
         "KR FC",
         "A disturbed"
       ]
@@ -36,7 +38,9 @@
     "AC Milan": "Rocky",
     "AFRICHESTER FC": "Zlatan",
     "KR FC": "Kato Ramathan",
-    "Paris CF": "rrimu"
+    "Paris CF": "rrimu",
+    "Titan city": "Ethan",
+    "THE TIKITAKA MAESTRO": "EBZ"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -48,7 +52,9 @@
     "AC Milan": 85,
     "AFRICHESTER FC": 90.1,
     "KR FC": 71.6,
-    "Paris CF": 90.7
+    "Paris CF": 90.7,
+    "Titan city": 89.6,
+    "THE TIKITAKA MAESTRO": 73
   },
   "knownTeamsPool": [
     {
@@ -100,6 +106,16 @@
       "team": "Paris CF",
       "manager": "rrimu",
       "rating": 90.7
+    },
+    {
+      "team": "Titan city",
+      "manager": "Ethan",
+      "rating": 89.6
+    },
+    {
+      "team": "THE TIKITAKA MAESTRO",
+      "manager": "EBZ",
+      "rating": 73
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
