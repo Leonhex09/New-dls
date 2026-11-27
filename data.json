@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 10:39 PM",
+  "lastUpdated": "Nov 27, 11:19 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -9,7 +9,6 @@
       "teams": [
         "Disciplinary committee",
         "UNCLE HIM",
-        "Ac millan",
         "Diamond fox fc",
         "STRAIGHT UNIT",
         "Paris CF",
@@ -18,7 +17,8 @@
         "FALCONS FC",
         "FINIX",
         "TEAM VIEWER",
-        "Massey"
+        "Massey",
+        "GAZA FC"
       ]
     },
     {
@@ -62,20 +62,6 @@
       "venue": "Grand Pitch",
       "home": "TEAM VIEWER",
       "away": "UNCLE HIM",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795808381146,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "venue": "Main Arena",
-      "home": "Ac millan",
-      "away": "FINIX",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -167,20 +153,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795808381153,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 2",
-      "date": "Matchday 2",
-      "venue": "Grand Pitch",
-      "home": "Ac millan",
-      "away": "Titan city",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795808381154,
       "group": "Tier 1 Group A",
       "round": "Matchday 2",
@@ -258,20 +230,6 @@
       "venue": "Grand Pitch",
       "home": "AFRICHESTER FC",
       "away": "UNCLE HIM",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795808381160,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 3",
-      "date": "Matchday 3",
-      "venue": "Main Arena",
-      "home": "Ac millan",
-      "away": "Paris CF",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -363,20 +321,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795808381167,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 4",
-      "date": "Matchday 4",
-      "venue": "Grand Pitch",
-      "home": "Ac millan",
-      "away": "Diamond fox fc",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795808381168,
       "group": "Tier 1 Group A",
       "round": "Matchday 5",
@@ -447,20 +391,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795808381173,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 5",
-      "date": "Matchday 5",
-      "venue": "Grand Pitch",
-      "home": "Ac millan",
-      "away": "UNCLE HIM",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795808381174,
       "group": "Tier 1 Group A",
       "round": "Matchday 6",
@@ -510,20 +440,6 @@
       "venue": "Grand Pitch",
       "home": "FINIX",
       "away": "Diamond fox fc",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795808381178,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 6",
-      "date": "Matchday 6",
-      "venue": "Main Arena",
-      "home": "Ac millan",
-      "away": "TEAM VIEWER",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -587,20 +503,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795808381183,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 7",
-      "date": "Matchday 7",
-      "venue": "Grand Pitch",
-      "home": "Ac millan",
-      "away": "FALCONS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795808381184,
       "group": "Tier 1 Group A",
       "round": "Matchday 7",
@@ -650,20 +552,6 @@
       "venue": "Grand Pitch",
       "home": "Paris CF",
       "away": "Diamond fox fc",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795808381188,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 8",
-      "date": "Matchday 8",
-      "venue": "Main Arena",
-      "home": "Ac millan",
-      "away": "AFRICHESTER FC",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -727,20 +615,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795808381193,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 9",
-      "date": "Matchday 9",
-      "venue": "Grand Pitch",
-      "home": "Ac millan",
-      "away": "STRAIGHT UNIT",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795808381194,
       "group": "Tier 1 Group A",
       "round": "Matchday 9",
@@ -790,20 +664,6 @@
       "venue": "Grand Pitch",
       "home": "FINIX",
       "away": "FALCONS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795808381198,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 10",
-      "date": "Matchday 10",
-      "venue": "Main Arena",
-      "home": "Ac millan",
-      "away": "Disciplinary committee",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -888,20 +748,6 @@
       "venue": "Main Arena",
       "home": "Disciplinary committee",
       "away": "UNCLE HIM",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795808381205,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 11",
-      "date": "Matchday 11",
-      "venue": "Grand Pitch",
-      "home": "Massey",
-      "away": "Ac millan",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -1913,7 +1759,7 @@
     "Gulwe fc": "Manager TBD",
     "El-bichitor": "PEP",
     "FINIX": "Professor",
-    "Ac millan": "Clinton"
+    "GAZA FC": "Manager TBD"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -1939,7 +1785,7 @@
     "Gulwe fc": 78.4,
     "El-bichitor": 85,
     "FINIX": 89.4,
-    "Ac millan": 93.9
+    "GAZA FC": 93.2
   },
   "knownTeamsPool": [
     {
@@ -2058,14 +1904,20 @@
       "rating": 89.4
     },
     {
-      "team": "Ac millan",
-      "manager": "Clinton",
-      "rating": 93.9
+      "team": "GAZA FC",
+      "manager": "Manager TBD",
+      "rating": 93.2
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
   "tierMovementApplied": false,
   "removedTeamsArchive": [
+    {
+      "team": "Ac millan",
+      "manager": "Clinton",
+      "rating": 93.9,
+      "removedAt": "Nov 27"
+    },
     {
       "team": "AFRICHESTER 2",
       "manager": "Manager TBD",
