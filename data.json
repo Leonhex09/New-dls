@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 12:04 AM",
+  "lastUpdated": "Nov 28, 12:05 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -18,7 +18,7 @@
         "FINIX",
         "TEAM VIEWER",
         "Massey",
-        "GAZA FC"
+        "Ac millan"
       ]
     },
     {
@@ -40,20 +40,6 @@
     }
   ],
   "matches": [
-    {
-      "id": 1795810877798,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "venue": "Main Arena",
-      "home": "Disciplinary committee",
-      "away": "GAZA FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
     {
       "id": 1795810877799,
       "group": "Tier 1 Group A",
@@ -132,20 +118,6 @@
       "venue": "Main Arena",
       "home": "Massey",
       "away": "Disciplinary committee",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795810877807,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 2",
-      "date": "Matchday 2",
-      "venue": "Grand Pitch",
-      "home": "GAZA FC",
-      "away": "TEAM VIEWER",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -237,20 +209,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795810877814,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 3",
-      "date": "Matchday 3",
-      "venue": "Main Arena",
-      "home": "GAZA FC",
-      "away": "FALCONS FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795810877815,
       "group": "Tier 1 Group A",
       "round": "Matchday 3",
@@ -328,20 +286,6 @@
       "venue": "Main Arena",
       "home": "Titan city",
       "away": "Massey",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795810877821,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 4",
-      "date": "Matchday 4",
-      "venue": "Grand Pitch",
-      "home": "GAZA FC",
-      "away": "AFRICHESTER FC",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -433,20 +377,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795810877828,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 5",
-      "date": "Matchday 5",
-      "venue": "Main Arena",
-      "home": "GAZA FC",
-      "away": "STRAIGHT UNIT",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795810877829,
       "group": "Tier 1 Group A",
       "round": "Matchday 5",
@@ -531,20 +461,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795810877835,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 6",
-      "date": "Matchday 6",
-      "venue": "Grand Pitch",
-      "home": "GAZA FC",
-      "away": "UNCLE HIM",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795810877836,
       "group": "Tier 1 Group A",
       "round": "Matchday 7",
@@ -615,20 +531,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795810877841,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 7",
-      "date": "Matchday 7",
-      "venue": "Grand Pitch",
-      "home": "GAZA FC",
-      "away": "Massey",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795810877843,
       "group": "Tier 1 Group A",
       "round": "Matchday 8",
@@ -678,20 +580,6 @@
       "venue": "Grand Pitch",
       "home": "FALCONS FC",
       "away": "UNCLE HIM",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795810877847,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 8",
-      "date": "Matchday 8",
-      "venue": "Main Arena",
-      "home": "GAZA FC",
-      "away": "FINIX",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -755,20 +643,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795810877852,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 9",
-      "date": "Matchday 9",
-      "venue": "Grand Pitch",
-      "home": "GAZA FC",
-      "away": "Titan city",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795810877853,
       "group": "Tier 1 Group A",
       "round": "Matchday 9",
@@ -825,20 +699,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795810877857,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 10",
-      "date": "Matchday 10",
-      "venue": "Main Arena",
-      "home": "GAZA FC",
-      "away": "Paris CF",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795810877858,
       "group": "Tier 1 Group A",
       "round": "Matchday 10",
@@ -888,20 +748,6 @@
       "venue": "Main Arena",
       "home": "Disciplinary committee",
       "away": "UNCLE HIM",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795810877862,
-      "group": "Tier 1 Group A",
-      "round": "Matchday 11",
-      "date": "Matchday 11",
-      "venue": "Grand Pitch",
-      "home": "GAZA FC",
-      "away": "Diamond fox fc",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -1913,7 +1759,7 @@
     "Gulwe fc": "Manager TBD",
     "El-bichitor": "PEP",
     "FINIX": "Professor",
-    "GAZA FC": "Fame jr"
+    "Ac millan": "Clinton"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -1939,7 +1785,7 @@
     "Gulwe fc": 78.4,
     "El-bichitor": 85,
     "FINIX": 89.4,
-    "GAZA FC": 93.2
+    "Ac millan": 93.9
   },
   "knownTeamsPool": [
     {
@@ -2058,19 +1904,19 @@
       "rating": 89.4
     },
     {
-      "team": "GAZA FC",
-      "manager": "Fame jr",
-      "rating": 93.2
+      "team": "Ac millan",
+      "manager": "Clinton",
+      "rating": 93.9
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
   "tierMovementApplied": false,
   "removedTeamsArchive": [
     {
-      "team": "Ac millan",
-      "manager": "Clinton",
-      "rating": 93.9,
-      "removedAt": "Nov 27"
+      "team": "GAZA FC",
+      "manager": "Fame jr",
+      "rating": 93.2,
+      "removedAt": "Nov 28"
     }
   ],
   "fixtureMode": "single",
