@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 09:08 PM",
+  "lastUpdated": "Nov 27, 10:39 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -9,24 +9,26 @@
       "teams": [
         "Disciplinary committee",
         "UNCLE HIM",
+        "Ac millan",
         "Diamond fox fc",
         "STRAIGHT UNIT",
         "Paris CF",
         "AFRICHESTER FC",
         "Titan city",
         "FALCONS FC",
+        "FINIX",
         "TEAM VIEWER",
-        "Massey",
-        "AC Milan"
+        "Massey"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
+        "AC Milan",
+        "El-bichitor",
         "Baggie",
         "STARBOY FC",
         "Bluemcclure",
-        "AFRICHESTER 2",
         "Gulwe fc",
         "THE TIKITAKA MAESTRO",
         "KR FC",
@@ -837,20 +839,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795802826694,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 1",
-      "date": "Matchday 1",
-      "venue": "Stadium",
-      "home": "AFRICHESTER 2",
-      "away": "Ivy",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795802826695,
       "group": "Tier 2 Group A",
       "round": "Matchday 1",
@@ -914,20 +902,6 @@
       "venue": "Stadium",
       "home": "Bluemcclure",
       "away": "TAXZY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795802826700,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 2",
-      "date": "Matchday 2",
-      "venue": "Stadium",
-      "home": "AFRICHESTER 2",
-      "away": "KR FC",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -1005,20 +979,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795802826706,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 3",
-      "date": "Matchday 3",
-      "venue": "Stadium",
-      "home": "AFRICHESTER 2",
-      "away": "Gulwe fc",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795802826707,
       "group": "Tier 2 Group A",
       "round": "Matchday 4",
@@ -1068,20 +1028,6 @@
       "venue": "Stadium",
       "home": "STARBOY FC",
       "away": "Gulwe fc",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795802826711,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 4",
-      "date": "Matchday 4",
-      "venue": "Stadium",
-      "home": "Bluemcclure",
-      "away": "AFRICHESTER 2",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -1201,20 +1147,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795802826720,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 6",
-      "date": "Matchday 6",
-      "venue": "Stadium",
-      "home": "A disturbed",
-      "away": "AFRICHESTER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795802826721,
       "group": "Tier 2 Group A",
       "round": "Matchday 6",
@@ -1250,20 +1182,6 @@
       "venue": "Stadium",
       "home": "KR FC",
       "away": "Gulwe fc",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795802826724,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 7",
-      "date": "Matchday 7",
-      "venue": "Stadium",
-      "home": "TAXZY FC",
-      "away": "AFRICHESTER 2",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -1313,20 +1231,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795802826728,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 8",
-      "date": "Matchday 8",
-      "venue": "Stadium",
-      "home": "THE TIKITAKA MAESTRO",
-      "away": "AFRICHESTER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795802826729,
       "group": "Tier 2 Group A",
       "round": "Matchday 8",
@@ -1362,20 +1266,6 @@
       "venue": "Stadium",
       "home": "A disturbed",
       "away": "CHARLY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795802826732,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 9",
-      "date": "Matchday 9",
-      "venue": "Stadium",
-      "home": "Baggie",
-      "away": "AFRICHESTER 2",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -1453,20 +1343,6 @@
       "playerOfTheMatch": null
     },
     {
-      "id": 1795802826738,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 10",
-      "date": "Matchday 10",
-      "venue": "Stadium",
-      "home": "AFRICHESTER 2",
-      "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
       "id": 1795802826739,
       "group": "Tier 2 Group A",
       "round": "Matchday 10",
@@ -1516,20 +1392,6 @@
       "venue": "Stadium",
       "home": "Baggie",
       "away": "STARBOY FC",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
-    },
-    {
-      "id": 1795802826743,
-      "group": "Tier 2 Group A",
-      "round": "Matchday 11",
-      "date": "Matchday 11",
-      "venue": "Stadium",
-      "home": "AFRICHESTER 2",
-      "away": "CHARLY FC",
       "homeScore": null,
       "awayScore": null,
       "status": "upcoming",
@@ -1601,7 +1463,9 @@
     "TAXZY FC": "KILI",
     "Baggie": "The Saint",
     "Gulwe fc": "Manager TBD",
-    "AFRICHESTER 2": "Manager TBD"
+    "El-bichitor": "PEP",
+    "FINIX": "Professor",
+    "Ac millan": "Clinton"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -1625,7 +1489,9 @@
     "TAXZY FC": 70.3,
     "Baggie": 84.5,
     "Gulwe fc": 78.4,
-    "AFRICHESTER 2": 80.2
+    "El-bichitor": 85,
+    "FINIX": 89.4,
+    "Ac millan": 93.9
   },
   "knownTeamsPool": [
     {
@@ -1734,19 +1600,36 @@
       "rating": 78.4
     },
     {
-      "team": "AFRICHESTER 2",
-      "manager": "Manager TBD",
-      "rating": 80.2
+      "team": "El-bichitor",
+      "manager": "PEP",
+      "rating": 85
+    },
+    {
+      "team": "FINIX",
+      "manager": "Professor",
+      "rating": 89.4
+    },
+    {
+      "team": "Ac millan",
+      "manager": "Clinton",
+      "rating": 93.9
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
   "tierMovementApplied": false,
   "removedTeamsArchive": [
     {
+      "team": "AFRICHESTER 2",
+      "manager": "Manager TBD",
+      "rating": 80.2,
+      "removedAt": "Nov 27"
+    },
+    {
       "team": "CHARLY",
       "manager": "Coach Hasgad",
       "rating": 95.6,
       "removedAt": "Nov 27"
     }
-  ]
+  ],
+  "fixtureMode": "single"
 }
