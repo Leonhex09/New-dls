@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 08:29 PM",
+  "lastUpdated": "Nov 27, 08:31 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -1482,7 +1482,7 @@
     "CHARLY FC": 55.6,
     "TAXZY FC": 70.3,
     "Baggie": 84.5,
-    "Gulwe fc": 80
+    "Gulwe fc": 78.4
   },
   "knownTeamsPool": [
     {
@@ -1588,7 +1588,7 @@
     {
       "team": "Gulwe fc",
       "manager": "Manager TBD",
-      "rating": 80
+      "rating": 78.4
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
