@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 06:01 PM",
+  "lastUpdated": "Nov 27, 06:45 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -9,17 +9,18 @@
       "teams": [
         "Disciplinary committee",
         "UNCLE HIM",
+        "Diamond fox fc",
         "STRAIGHT UNIT",
         "Paris CF",
         "AFRICHESTER FC",
         "Titan city",
-        "FALCONS FC",
-        "Massey"
+        "FALCONS FC"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
+        "Massey",
         "AC Milan",
         "STARBOY FC",
         "Bluemcclure",
@@ -46,7 +47,8 @@
     "THE TIKITAKA MAESTRO": "EBZ",
     "Ivy": "Amorim",
     "Massey": "Furgerson",
-    "Disciplinary committee": "Micheal carrick"
+    "Disciplinary committee": "Micheal carrick",
+    "Diamond fox fc": "Ryan"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -63,7 +65,8 @@
     "THE TIKITAKA MAESTRO": 73,
     "Ivy": 70,
     "Massey": 85.4,
-    "Disciplinary committee": 94.7
+    "Disciplinary committee": 94.7,
+    "Diamond fox fc": 93.7
   },
   "knownTeamsPool": [
     {
@@ -140,6 +143,11 @@
       "team": "Disciplinary committee",
       "manager": "Micheal carrick",
       "rating": 94.7
+    },
+    {
+      "team": "Diamond fox fc",
+      "manager": "Ryan",
+      "rating": 93.7
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
