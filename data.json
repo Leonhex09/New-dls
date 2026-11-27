@@ -7,6 +7,8 @@
     {
       "name": "Tier 1 Group A",
       "teams": [
+        "FINIX",
+        "El-bichitor",
         "Disciplinary committee",
         "UNCLE HIM",
         "Ac millan",
@@ -16,16 +18,14 @@
         "AFRICHESTER FC",
         "Titan city",
         "FALCONS FC",
-        "FINIX",
-        "TEAM VIEWER",
-        "Massey"
+        "TEAM VIEWER"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
+        "Massey",
         "AC Milan",
-        "El-bichitor",
         "Baggie",
         "STARBOY FC",
         "Bluemcclure",
@@ -321,11 +321,11 @@
     "AFRICHESTER FC": "Manager TBD",
     "Titan city": "Manager TBD",
     "FALCONS FC": "Manager TBD",
-    "FINIX": "Manager TBD",
+    "FINIX": "Professor",
     "TEAM VIEWER": "Manager TBD",
     "Massey": "Manager TBD",
     "AC Milan": "Manager TBD",
-    "El-bichitor": "Manager TBD",
+    "El-bichitor": "PEP",
     "Baggie": "Manager TBD",
     "STARBOY FC": "Manager TBD",
     "Bluemcclure": "Manager TBD",
@@ -347,11 +347,11 @@
     "AFRICHESTER FC": 80,
     "Titan city": 80,
     "FALCONS FC": 80,
-    "FINIX": 80,
+    "FINIX": 89.4,
     "TEAM VIEWER": 80,
     "Massey": 80,
     "AC Milan": 80,
-    "El-bichitor": 80,
+    "El-bichitor": 85,
     "Baggie": 80,
     "STARBOY FC": 80,
     "Bluemcclure": 80,
@@ -421,8 +421,8 @@
     },
     {
       "team": "FINIX",
-      "manager": "Manager TBD",
-      "rating": 80
+      "manager": "Professor",
+      "rating": 89.4
     },
     {
       "team": "TEAM VIEWER",
@@ -441,8 +441,8 @@
     },
     {
       "team": "El-bichitor",
-      "manager": "Manager TBD",
-      "rating": 80
+      "manager": "PEP",
+      "rating": 85
     },
     {
       "team": "Baggie",
