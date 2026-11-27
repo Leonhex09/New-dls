@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 08:03 PM",
+  "lastUpdated": "Nov 27, 08:06 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -14,19 +14,20 @@
         "Paris CF",
         "AFRICHESTER FC",
         "Titan city",
-        "FALCONS FC"
+        "FALCONS FC",
+        "TEAM VIEWER",
+        "Massey"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
-        "TEAM VIEWER",
-        "Massey",
         "AC Milan",
         "STARBOY FC",
         "Bluemcclure",
         "THE TIKITAKA MAESTRO",
         "KR FC",
+        "TAXZY FC",
         "Ivy",
         "A disturbed",
         "CHARLY FC"
@@ -1075,7 +1076,8 @@
     "Disciplinary committee": "Micheal carrick",
     "Diamond fox fc": "Ryan",
     "TEAM VIEWER": "cj banks",
-    "CHARLY FC": "Coach hasgad"
+    "CHARLY FC": "Coach hasgad",
+    "TAXZY FC": "KILI"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -1095,7 +1097,8 @@
     "Disciplinary committee": 94.7,
     "Diamond fox fc": 93.7,
     "TEAM VIEWER": 88,
-    "CHARLY FC": 55.6
+    "CHARLY FC": 55.6,
+    "TAXZY FC": 70.3
   },
   "knownTeamsPool": [
     {
@@ -1187,6 +1190,11 @@
       "team": "CHARLY FC",
       "manager": "Coach hasgad",
       "rating": 55.6
+    },
+    {
+      "team": "TAXZY FC",
+      "manager": "KILI",
+      "rating": 70.3
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
