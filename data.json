@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 24, 03:24 PM",
+  "lastUpdated": "Nov 27, 04:54 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -9,14 +9,15 @@
       "teams": [
         "UNCLE HIM",
         "STRAIGHT UNIT",
+        "Paris CF",
         "AFRICHESTER FC",
-        "FALCONS FC",
-        "AC Milan"
+        "FALCONS FC"
       ]
     },
     {
       "name": "Tier 2 Group A",
       "teams": [
+        "AC Milan",
         "STARBOY FC",
         "Bluemcclure",
         "KR FC",
@@ -34,7 +35,8 @@
     "FALCONS FC": "Sali",
     "AC Milan": "Rocky",
     "AFRICHESTER FC": "Zlatan",
-    "KR FC": "Kato Ramathan"
+    "KR FC": "Kato Ramathan",
+    "Paris CF": "rrimu"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -45,7 +47,8 @@
     "FALCONS FC": 89.4,
     "AC Milan": 85,
     "AFRICHESTER FC": 90.1,
-    "KR FC": 71.6
+    "KR FC": 71.6,
+    "Paris CF": 90.7
   },
   "knownTeamsPool": [
     {
@@ -92,6 +95,11 @@
       "team": "KR FC",
       "manager": "Kato Ramathan",
       "rating": 71.6
+    },
+    {
+      "team": "Paris CF",
+      "manager": "rrimu",
+      "rating": 90.7
     }
   ],
   "commentary": "Waited too long, please share Whatsapp link to make up the required number ",
