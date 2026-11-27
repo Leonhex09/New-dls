@@ -1,8 +1,8 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 11:30 PM",
-  "qualifyCount": 8,
+  "lastUpdated": "Nov 28, 12:04 AM",
+  "qualifyCount": 5,
   "groups": [
     {
       "name": "Tier 1 Group A",
@@ -2074,8 +2074,8 @@
     }
   ],
   "fixtureMode": "single",
-  "relegateCount": 2,
-  "promoteCount": 2,
+  "relegateCount": 3,
+  "promoteCount": 3,
   "tier1TargetCount": 0,
   "guideEnabled": true
 }
