@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 08:01 PM",
+  "lastUpdated": "Nov 27, 08:02 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -837,7 +837,7 @@
     "Disciplinary committee": "Micheal carrick",
     "Diamond fox fc": "Ryan",
     "TEAM VIEWER": "cj banks",
-    "CHARLY FC": "Coach haasgad"
+    "CHARLY FC": "Coach hasgad"
   },
   "teamRatings": {
     "A disturbed": 56.5,
@@ -947,7 +947,7 @@
     },
     {
       "team": "CHARLY FC",
-      "manager": "Coach haasgad",
+      "manager": "Coach hasgad",
       "rating": 55.6
     }
   ],
@@ -959,18 +959,6 @@
       "manager": "Coach Hasgad",
       "rating": 95.6,
       "removedAt": "Nov 27"
-    },
-    {
-      "team": "Chelsea",
-      "manager": "Enzo",
-      "rating": 78,
-      "removedAt": "Nov 24"
-    },
-    {
-      "team": "Gunners",
-      "manager": "Bk",
-      "rating": 92.4,
-      "removedAt": "Nov 24"
     }
   ]
 }
