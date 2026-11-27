@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 27, 11:19 PM",
+  "lastUpdated": "Nov 27, 11:20 PM",
   "qualifyCount": 0,
   "groups": [
     {
@@ -1916,18 +1916,6 @@
       "team": "Ac millan",
       "manager": "Clinton",
       "rating": 93.9,
-      "removedAt": "Nov 27"
-    },
-    {
-      "team": "AFRICHESTER 2",
-      "manager": "Manager TBD",
-      "rating": 80.2,
-      "removedAt": "Nov 27"
-    },
-    {
-      "team": "CHARLY",
-      "manager": "Coach Hasgad",
-      "rating": 95.6,
       "removedAt": "Nov 27"
     }
   ],
