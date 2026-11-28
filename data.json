@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 03:07 AM",
+  "lastUpdated": "Nov 28, 07:56 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -2161,15 +2161,15 @@
   ],
   "removedTeamsArchive": [],
   "managers": {
-    "Disciplinary committee": "Manager TBD",
-    "UNCLE HIM": "Manager TBD",
-    "Ac millan": "Manager TBD",
-    "Diamond fox fc": "Manager TBD",
-    "STRAIGHT UNIT": "Manager TBD",
-    "Paris CF": "Manager TBD",
-    "AFRICHESTER FC": "Manager TBD",
-    "Titan city": "Manager TBD",
-    "FALCONS FC": "Manager TBD",
+    "Disciplinary committee": "Micheal carrick",
+    "UNCLE HIM": "HIM",
+    "Ac millan": "Clinton",
+    "Diamond fox fc": "Ryan",
+    "STRAIGHT UNIT": "The himist",
+    "Paris CF": "Rrimu",
+    "AFRICHESTER FC": "Zlatan",
+    "Titan city": "Ethan",
+    "FALCONS FC": "Sali",
     "FINIX": "Professor",
     "TEAM VIEWER": "Manager TBD",
     "Massey": "Manager TBD",
@@ -2225,47 +2225,47 @@
   "knownTeamsPool": [
     {
       "team": "Disciplinary committee",
-      "manager": "Manager TBD",
+      "manager": "Micheal carrick",
       "rating": 80
     },
     {
       "team": "UNCLE HIM",
-      "manager": "Manager TBD",
+      "manager": "HIM",
       "rating": 80
     },
     {
       "team": "Ac millan",
-      "manager": "Manager TBD",
+      "manager": "Clinton",
       "rating": 80
     },
     {
       "team": "Diamond fox fc",
-      "manager": "Manager TBD",
+      "manager": "Ryan",
       "rating": 80
     },
     {
       "team": "STRAIGHT UNIT",
-      "manager": "Manager TBD",
+      "manager": "The himist",
       "rating": 80
     },
     {
       "team": "Paris CF",
-      "manager": "Manager TBD",
+      "manager": "Rrimu",
       "rating": 80
     },
     {
       "team": "AFRICHESTER FC",
-      "manager": "Manager TBD",
+      "manager": "Zlatan",
       "rating": 80
     },
     {
       "team": "Titan city",
-      "manager": "Manager TBD",
+      "manager": "Ethan",
       "rating": 80
     },
     {
       "team": "FALCONS FC",
-      "manager": "Manager TBD",
+      "manager": "Sali",
       "rating": 80
     },
     {
