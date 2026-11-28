@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 10:20 AM",
+  "lastUpdated": "Nov 28, 10:22 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -391,8 +391,38 @@
       "homeScore": 1,
       "awayScore": 1,
       "status": "played",
-      "stats": null,
-      "playerOfTheMatch": null,
+      "stats": {
+        "possession": [
+          52,
+          48
+        ],
+        "shots": [
+          9,
+          4
+        ],
+        "tackles": [
+          8,
+          2
+        ],
+        "passes": [
+          48,
+          64
+        ],
+        "corners": [
+          1,
+          1
+        ],
+        "fouls": [
+          1,
+          1
+        ]
+      },
+      "playerOfTheMatch": {
+        "player": "Mbappe",
+        "rating": "9.8",
+        "goals": 1,
+        "assists": 0
+      },
       "approvedBy": "Master Admin"
     },
     {
