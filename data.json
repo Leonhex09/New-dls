@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 10:54 AM",
+  "lastUpdated": "Nov 28, 12:50 PM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -397,11 +397,63 @@
       "venue": "Grand Pitch",
       "home": "Diamond fox fc",
       "away": "TEAM VIEWER",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
+      "homeScore": 4,
+      "awayScore": 0,
+      "status": "played",
+      "stats": {
+        "possession": [
+          60,
+          40
+        ],
+        "shots": [
+          9,
+          0
+        ],
+        "tackles": [
+          10,
+          7
+        ],
+        "passes": [
+          31,
+          28
+        ],
+        "corners": [
+          1,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bookings": [
+          0,
+          1
+        ],
+        "offsides": [
+          0,
+          0
+        ],
+        "passCompletion": [
+          81,
+          75
+        ],
+        "tackleSuccess": [
+          100,
+          77
+        ],
+        "shotAccuracy": [
+          66,
+          0
+        ]
+      },
+      "playerOfTheMatch": {
+        "player": "Kane",
+        "rating": "9.0",
+        "goals": 3,
+        "assists": 0
+      },
+      "approvedBy": "Steven",
+      "approvedAt": "Nov 28, 12:50 PM"
     },
     {
       "id": 1795822163242,
