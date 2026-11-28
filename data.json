@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 10:53 AM",
+  "lastUpdated": "Nov 28, 10:54 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -466,6 +466,26 @@
         "fouls": [
           1,
           1
+        ],
+        "bookings": [
+          0,
+          0
+        ],
+        "offsides": [
+          0,
+          0
+        ],
+        "tackleSuccess": [
+          88,
+          66
+        ],
+        "shotAccuracy": [
+          33,
+          100
+        ],
+        "passCompletion": [
+          76,
+          87
         ]
       },
       "playerOfTheMatch": {
