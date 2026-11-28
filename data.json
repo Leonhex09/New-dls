@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 08:00 AM",
+  "lastUpdated": "Nov 28, 10:20 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -388,11 +388,12 @@
       "venue": "Grand Pitch",
       "home": "UNCLE HIM",
       "away": "FINIX",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "played",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": "Master Admin"
     },
     {
       "id": 1795822163091,
