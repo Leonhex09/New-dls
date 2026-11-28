@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 01:36 PM",
+  "lastUpdated": "Nov 28, 02:05 PM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -1440,11 +1440,13 @@
       "venue": "Main Arena",
       "home": "A disturbed",
       "away": "Baggie",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "played",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": "Admin2",
+      "approvedAt": "Nov 28, 02:05 PM"
     },
     {
       "id": 1795822163736,
