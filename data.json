@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 10:22 AM",
+  "lastUpdated": "Nov 28, 10:53 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -332,11 +332,62 @@
       "venue": "Main Arena",
       "home": "El-bichitor",
       "away": "Titan city",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
-      "stats": null,
-      "playerOfTheMatch": null
+      "homeScore": 1,
+      "awayScore": 7,
+      "status": "played",
+      "stats": {
+        "possession": [
+          49,
+          51
+        ],
+        "shots": [
+          1,
+          9
+        ],
+        "tackles": [
+          2,
+          5
+        ],
+        "passes": [
+          31,
+          34
+        ],
+        "corners": [
+          0,
+          3
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "bookings": [
+          0,
+          0
+        ],
+        "offsides": [
+          0,
+          0
+        ],
+        "tackleSuccess": [
+          40,
+          100
+        ],
+        "shotAccuracy": [
+          100,
+          66
+        ],
+        "passCompletion": [
+          77,
+          80
+        ]
+      },
+      "playerOfTheMatch": {
+        "player": "Haaland",
+        "rating": "9.5",
+        "goals": 3,
+        "assists": 0
+      },
+      "approvedBy": "Master Admin"
     },
     {
       "id": 1795822162985,
