@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 02:55 AM",
+  "lastUpdated": "Nov 28, 03:07 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -2175,16 +2175,16 @@
     "Massey": "Manager TBD",
     "AC Milan": "Manager TBD",
     "El-bichitor": "PEP",
-    "Baggie": "Manager TBD",
-    "STARBOY FC": "Manager TBD",
-    "Bluemcclure": "Manager TBD",
-    "Gulwe fc": "Manager TBD",
+    "Baggie": "Bashcom",
+    "STARBOY FC": "Brave",
+    "Bluemcclure": "Solid",
+    "Gulwe fc": "Nikolai k",
     "THE TIKITAKA MAESTRO": "Manager TBD",
-    "KR FC": "Manager TBD",
-    "TAXZY FC": "Manager TBD",
-    "Ivy": "Manager TBD",
-    "A disturbed": "Manager TBD",
-    "CHARLY FC": "Manager TBD"
+    "KR FC": "Kato Ramathan",
+    "TAXZY FC": "Taxzy bobo",
+    "Ivy": "Ivy",
+    "A disturbed": "Bro",
+    "CHARLY FC": "Charly"
   },
   "teamRatings": {
     "Disciplinary committee": 80,
@@ -2295,22 +2295,22 @@
     },
     {
       "team": "Baggie",
-      "manager": "Manager TBD",
+      "manager": "Bashcom",
       "rating": 80
     },
     {
       "team": "STARBOY FC",
-      "manager": "Manager TBD",
+      "manager": "Brave",
       "rating": 80
     },
     {
       "team": "Bluemcclure",
-      "manager": "Manager TBD",
+      "manager": "Solid",
       "rating": 80
     },
     {
       "team": "Gulwe fc",
-      "manager": "Manager TBD",
+      "manager": "Nikolai k",
       "rating": 80
     },
     {
@@ -2320,27 +2320,27 @@
     },
     {
       "team": "KR FC",
-      "manager": "Manager TBD",
+      "manager": "Kato Ramathan",
       "rating": 80
     },
     {
       "team": "TAXZY FC",
-      "manager": "Manager TBD",
+      "manager": "Taxzy bobo",
       "rating": 80
     },
     {
       "team": "Ivy",
-      "manager": "Manager TBD",
+      "manager": "Ivy",
       "rating": 80
     },
     {
       "team": "A disturbed",
-      "manager": "Manager TBD",
+      "manager": "Bro",
       "rating": 80
     },
     {
       "team": "CHARLY FC",
-      "manager": "Manager TBD",
+      "manager": "Charly",
       "rating": 80
     }
   ],
