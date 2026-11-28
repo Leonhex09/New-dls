@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 12:52 PM",
+  "lastUpdated": "Nov 28, 01:36 PM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -463,11 +463,13 @@
       "venue": "Main Arena",
       "home": "STRAIGHT UNIT",
       "away": "Ac millan",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "upcoming",
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "played",
       "stats": null,
-      "playerOfTheMatch": null
+      "playerOfTheMatch": null,
+      "approvedBy": "Admin2",
+      "approvedAt": "Nov 28, 01:36 PM"
     },
     {
       "id": 1795822163058,
