@@ -1,7 +1,7 @@
 {
   "tournamentName": "DLS Champions League 2026",
   "season": "SEASON 1 • TIERED STAGE",
-  "lastUpdated": "Nov 28, 07:56 AM",
+  "lastUpdated": "Nov 28, 07:59 AM",
   "qualifyCount": 8,
   "groups": [
     {
@@ -2171,9 +2171,9 @@
     "Titan city": "Ethan",
     "FALCONS FC": "Sali",
     "FINIX": "Professor",
-    "TEAM VIEWER": "Manager TBD",
-    "Massey": "Manager TBD",
-    "AC Milan": "Manager TBD",
+    "TEAM VIEWER": "Cj banks",
+    "Massey": "Ferguson",
+    "AC Milan": "Rocky",
     "El-bichitor": "PEP",
     "Baggie": "Bashcom",
     "STARBOY FC": "Brave",
@@ -2183,7 +2183,7 @@
     "KR FC": "Kato Ramathan",
     "TAXZY FC": "Taxzy bobo",
     "Ivy": "Ivy",
-    "A disturbed": "Bro",
+    "A disturbed": "Owor joseph",
     "CHARLY FC": "Charly"
   },
   "teamRatings": {
@@ -2275,17 +2275,17 @@
     },
     {
       "team": "TEAM VIEWER",
-      "manager": "Manager TBD",
+      "manager": "Cj banks",
       "rating": 80
     },
     {
       "team": "Massey",
-      "manager": "Manager TBD",
+      "manager": "Ferguson",
       "rating": 80
     },
     {
       "team": "AC Milan",
-      "manager": "Manager TBD",
+      "manager": "Rocky",
       "rating": 80
     },
     {
@@ -2335,7 +2335,7 @@
     },
     {
       "team": "A disturbed",
-      "manager": "Bro",
+      "manager": "Owor joseph",
       "rating": 80
     },
     {
